@@ -6,13 +6,23 @@
   height: 150vh;
   width: 100vw;
 }
-
+.container_forecast {
+  display: flex;
+  // align-items: left;
+  // flex: 2;
+}
+.mars-gif {
+  height: calc(50px + 5vw);
+}
 .title {
   color: #F7F4E0;
   font-size: 1.8em;
 }
 
 .main-component_header {
+  font-size: calc(0.3em + 1vw);
+  display: flex;
+  align-items: center;
   background-color: black;
   width: 91vw;
 }

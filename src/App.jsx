@@ -17,7 +17,7 @@ function App() {
       <div className="main-component_container">
         <header className="main-component_header">
           
-          <img src={Marsgif} height="90" />
+          <img className="mars-gif" src={Marsgif} />
           <div className="title">The Mars Weather Network</div>
         </header>
          <div className="forecast_container">

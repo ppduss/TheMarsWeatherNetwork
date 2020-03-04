@@ -1,12 +1,47 @@
 .main-component_forecast {
-height: 60vh;
+height: 65vh;
 width: 90vw;
 background-color: #F7F4E0 ;
-flex-direction: column;
+// flex-direction: column;
+// flex: ;
 }
 
 .container_forecast {
   background-color: #103044;
   height: 61vh;
   width: 91vw;
+}
+.sol_container {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+  background-color: #bd7dab;
+  flex-wrap: wrap;
+  // align-content: flex-end;
+  // align-items: ;
+}
+.sol {
+  color: white;
+  font-size: calc(0.7em + 0.3vw);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 10px;
+  margin: 10px;
+  // width: 160px;
+  background-color: #103044;
+
+  
+}
+.temperature {
+    background-color: #103044;
+}
+.wind-speed {
+background-color: #103044;
+}
+.wind-direction {
+background-color: #103044;
+}
+.atmospheric-pressure {
+background-color: #103044;
 }
