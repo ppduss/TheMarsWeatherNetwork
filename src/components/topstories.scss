@@ -1,3 +1,6 @@
+.carousel-container {
+  width: 90vw ;
+}
 
 .top-stories_header {
   // background-color: #103044;
@@ -9,4 +12,21 @@
    background-color: #103044;
   height: 30vh;
    width: 85vw;
+}
+.story {
+  background-color:#bd7dab;
+  max-width: 250px;
+  
+}
+.story_txt {
+  color: white;
+  font-size: 0.8em;
+  // padding: 4px;
+  margin: 5px
+
+}
+.story_txt_title {
+  color: white;
+    // padding: 4px;
+      margin: 5px
 }
