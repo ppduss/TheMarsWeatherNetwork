@@ -15,6 +15,7 @@ background-color: #F7F4E0 ;
   display: flex;
   flex-direction: row;
   width: 90vw;
+  height: 50vh;
   background-color: #bd7dab;
   flex-wrap: wrap;
   // align-content: flex-end;
@@ -23,11 +24,12 @@ background-color: #F7F4E0 ;
 .sol {
   color: white;
   font-size: calc(0.7em + 0.3vw);
+  line-height: 40px;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 10px;
-  margin: 10px;
+  padding: 12px;
+  margin: 8px 3px;
   // width: 160px;
   background-color: #103044;
 
