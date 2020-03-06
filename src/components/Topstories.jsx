@@ -12,13 +12,27 @@ import impact from '../assets/images43/impactcrater.jpeg';
 import marstrue from '../assets/images43/marstrue.jpeg';
 
 
+// const [dimensions, setDimensions] = useState(window.innerWidth);
+
+// useEffect(() => {
+//   articleHandler = () => {
+//     setDimensions(window.innerWidth);
+//   };
+
+//   window.addEventListener('resize', handleResize);
+
+//   return (
+//     console.log(dimensions)
+//   );
+// });
+
+
 const slidesPerPage = () => {
   if (window.innerWidth < 1000) {
     return (3);
   } return (4);
 };
-// useEffect(() => console.log('this runs every render'));
-console.log(window.innerWidth, slidesPerPage());
+// console.log(window.innerWidth, slidesPerPage());
 
 const topstories = () => (
   <div>
@@ -31,6 +45,7 @@ const topstories = () => (
         slidesPerPage={slidesPerPage()}
         offset={0}
       >
+
         <div className="story">
           <a href="https://en.uncyclopedia.co/wiki/Ancient_Aliens">
             <img src={aliens} alt="Is there life on Mars ?" className="story" />
@@ -40,16 +55,23 @@ const topstories = () => (
         </div>
         <div className="story">
           <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
-            <img src={manfell} alt="Is there life on Mars ?" className="story" />
+            <img src={manfell} alt="Is the Starman in space ?" className="story" />
           </a>
           <span className="story_txt_title">David Bowie dead ?</span>
           <p className="story_txt">Or did the “man who fell on earth” return home ?</p>
         </div>
+        <div className="story">
+          <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
+            <img src={korolevcrater} alt="Korolev" className="story" />
+          </a>
+          <span className="story_txt_title">The Korolev Crater</span>
+          <p className="story_txt">2020's hottest destination ?</p>
+        </div>
 
-        <img src={korolevcrater} width={300} />
-        <img src={marstrue} width={300} />
-        <img src={impact} width={300} />
-        <img src={atmosphere} width={300} />
+        <img src={marstrue} alt="image" width={300} />
+        <img src={impact} alt="image" width={300} />
+        <img src={atmosphere} alt="image" width={300} />
+
       </Carousel>
     </div>
     <div className="top-stories_content" />

@@ -22,15 +22,27 @@ const Forecast = () => {
 
   const displayDay = () => {
     if (weatherData) {
+      // const newDate = new Date();
+      // console.log({ newDate });
       const solKeysArray = weatherData.sol_keys;
       const output = solKeysArray.map((sol) => {
         const day = weatherData[sol];
+        // const generateDate = () => {
+        //   if (day.First_UTC.slice(5, 7) === '01') {
+        //     return ('Jan');
+        //   } if (day.First_UTC.slice(5, 7) === '03') {
+        //     return ('Mar');
+        //   }
+        // };
         return (
           <>
 
-            {/* // <div className="sol_container"> */}
             <div className="sol">Sol: {sol}
-              {/* <div className="temperature"> */}
+              <div>{day.getUTCMonth()}
+
+                {day.First_UTC.slice(8, 10)}
+              </div>
+
               <div>{Math.round(day.AT.av)}</div>
               <div>{Math.round(day.AT.mn)}</div>
               <div>{Math.round(day.AT.mx)}</div>
