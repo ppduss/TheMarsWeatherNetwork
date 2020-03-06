@@ -14,9 +14,20 @@
 .mars-gif {
   height: calc(50px + 5vw);
 }
+.titles_group {
+  // align-items: center;
+  // background-color: blue;
+}
 .title {
   color: #F7F4E0;
   font-size: 1.8em;
+  
+  // margin-bottom: 8px;
+}
+.sub-title{
+    color: #F7F4E0;
+  font-size: 0.9em;
+  // margin-top: 8px;
 }
 
 .main-component_header {

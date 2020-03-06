@@ -22,25 +22,44 @@ const Forecast = () => {
 
   const displayDay = () => {
     if (weatherData) {
-      // const newDate = new Date();
       // console.log({ newDate });
       const solKeysArray = weatherData.sol_keys;
       const output = solKeysArray.map((sol) => {
         const day = weatherData[sol];
-        // const generateDate = () => {
-        //   if (day.First_UTC.slice(5, 7) === '01') {
-        //     return ('Jan');
-        //   } if (day.First_UTC.slice(5, 7) === '03') {
-        //     return ('Mar');
-        //   }
-        // };
+
+        const generateDate = () => {
+          if (day.First_UTC.slice(5, 7) === '01') {
+            return ('Jan');
+          } if (day.First_UTC.slice(5, 7) === '02') {
+            return ('Feb');
+          } if (day.First_UTC.slice(5, 7) === '03') {
+            return ('Mar');
+          } if (day.First_UTC.slice(5, 7) === '04') {
+            return ('Apr');
+          } if (day.First_UTC.slice(5, 7) === '05') {
+            return ('May');
+          } if (day.First_UTC.slice(5, 7) === '06') {
+            return ('June');
+          } if (day.First_UTC.slice(5, 7) === '07') {
+            return ('July');
+          } if (day.First_UTC.slice(5, 7) === '08') {
+            return ('Aug');
+          } if (day.First_UTC.slice(5, 7) === '09') {
+            return ('Sep');
+          } if (day.First_UTC.slice(5, 7) === '10') {
+            return ('Oct');
+          } if (day.First_UTC.slice(5, 7) === '11') {
+            return ('Nov');
+          } if (day.First_UTC.slice(5, 7) === '12') {
+            return ('Dec');
+          }
+        };
         return (
           <>
 
             <div className="sol">Sol: {sol}
-              <div>{day.getUTCMonth()}
-
-                {day.First_UTC.slice(8, 10)}
+              <div>
+                {`${generateDate()} ${day.First_UTC.slice(8, 10)}`}
               </div>
 
               <div>{Math.round(day.AT.av)}</div>
@@ -76,10 +95,11 @@ const Forecast = () => {
     <div className="container_forecast">
       <div className="spacer" />
       <div className="main-component_forecast">
-        <div>The latest weather updates from Elysium Planitia, Mars. </div>
+        {/* <div>The latest weather updates from Elysium Planitia, Mars. </div> */}
         <div className="sol_container">
           <div>
             <div className="sol">Sol:
+              <div>Earth day:</div>
               <div className="temperature">
                 <div>Average:</div>
                 <div>Low:</div>

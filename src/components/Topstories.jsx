@@ -41,7 +41,7 @@ const topstories = () => (
       <Carousel
         centered
         dots
-        infinite
+        // infinite
         slidesPerPage={slidesPerPage()}
         offset={0}
       >
@@ -58,7 +58,7 @@ const topstories = () => (
             <img src={manfell} alt="Is the Starman in space ?" className="story" />
           </a>
           <span className="story_txt_title">David Bowie dead ?</span>
-          <p className="story_txt">Or did the “man who fell on earth” return home ?</p>
+          <p className="story_txt">Or did the “man who fell to earth” return home ?</p>
         </div>
         <div className="story">
           <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
@@ -71,6 +71,7 @@ const topstories = () => (
         <img src={marstrue} alt="image" width={300} />
         <img src={impact} alt="image" width={300} />
         <img src={atmosphere} alt="image" width={300} />
+
 
       </Carousel>
     </div>

@@ -14,8 +14,12 @@ function App() {
     <div className="main-component_container">
       <header className="main-component_header">
 
-        <img className="mars-gif" src={Marsgif} />
-        <div className="title">The Mars Weather Network</div>
+        <img className="mars-gif" alt="marsgif" src={Marsgif} />
+        <div className="titles_group">
+          {/* <div className="spacer_small" /> */}
+          <div className="title">The Mars Weather Network</div>
+          <div className="sub-title">The latest weather updates from Elysium Planitia, Mars. </div>
+        </div>
       </header>
       <div className="forecast_container">
         <Forecast />
