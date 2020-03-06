@@ -5,6 +5,7 @@ import './global.scss';
 import Forecast from './components/Forecast';
 import Topstories from './components/Topstories';
 import Gallery from './components/Gallery.jsx';
+import UVindex from './components/UVindex';
 
 // IMAGES
 import Marsgif from './assets/Mars.gif';
@@ -25,11 +26,15 @@ function App() {
         <Forecast />
       </div>
       <div className="spacer_medium" />
-      <div className="top-stories_container" />
-      <Topstories />
 
-      <div className="spacer" />
-      <Gallery />
+      <div className="top-stories_container">
+        <Topstories />
+        <div />
+        <div className="spacer" />
+        <div className="gallery_container">
+          <Gallery />
+        </div>
+      </div>
     </div>
 
   );
