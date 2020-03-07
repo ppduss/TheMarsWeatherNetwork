@@ -24,7 +24,7 @@ background-color: #F7F4E0 ;
   // align-items: ;
 }
 .sol {
-  color: white;
+  color: rgb(0, 0, 0);
   font-size: calc(0.7em + 0.3vw);
   line-height: 40px;
   display: flex;
@@ -33,15 +33,15 @@ background-color: #F7F4E0 ;
   padding: 12px;
   margin: 8px 3px;
   // width: 160px;
-  background-color: #103044;
+  background-color: #F7F4E0;
 
   
 }
 .temperature {
-    background-color: #103044;
+    background-color: #F7F4E0;
 }
 .wind-speed {
-background-color: #103044;
+background-color: #F7F4E0;
 }
 .wind-direction {
 background-color: #103044;

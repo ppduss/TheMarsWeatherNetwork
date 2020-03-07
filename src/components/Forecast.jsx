@@ -65,9 +65,9 @@ const Forecast = () => {
                 {`${generateDate()} ${day.First_UTC.slice(8, 10)}`}
               </div>
 
-              <div>{Math.round(day.AT.av)}</div>
-              <div>{Math.round(day.AT.mn)}</div>
-              <div>{Math.round(day.AT.mx)}</div>
+              <div>{Math.round(day.AT.av)}°C</div>
+              <div>{Math.round(day.AT.mx)}°C</div>
+              <div>{Math.round(day.AT.mn)}°C</div>
               {/* </div> */}
               {/* <div className="wind-speed">Wind Speed */}
               <div>{Math.round(day.HWS.av)}</div>
@@ -102,11 +102,12 @@ const Forecast = () => {
         <div className="sol_container">
           <div>
             <div className="sol">Sol:
-              <div>Earth day:</div>
+              <div>Earth date</div>
               <div className="temperature">
-                <div>Average:</div>
-                <div>Low:</div>
+                <div>.</div>
                 <div>High: </div>
+                <div>Low:</div>
+
               </div>
               <div>
                 <div>Av. Wind Speed:</div>

@@ -5,7 +5,7 @@ import './global.scss';
 import Forecast from './components/Forecast';
 import Topstories from './components/Topstories';
 import Gallery from './components/Gallery.jsx';
-import UVindex from './components/UVindex';
+
 
 // IMAGES
 import Marsgif from './assets/Mars.gif';

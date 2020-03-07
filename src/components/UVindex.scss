@@ -1,12 +1,16 @@
 
 .UVindex_main {
 display: flex;
-font-size: 0.6em;
-// color: white;
+font-size: 0.5em;
+// margin: 10px;
 }
+
 .green {
   background-color: #4CA34B;
   padding: 7px;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
   text-align: center;
   width: 45px;
   height: 25px;
@@ -15,6 +19,9 @@ font-size: 0.6em;
 .yellow {
   background-color: #F1F221;
     padding: 7px;
+    display: flex;
+    vertical-align: middle;
+     justify-content: center;
     text-align: center;
      width: 45px;
      height: 25px;
@@ -23,6 +30,9 @@ font-size: 0.6em;
 .orange {
   background-color: #D16E14;
     padding: 7px;
+    display: flex;
+    vertical-align: middle;
+     justify-content: center;
     text-align: center;
      width: 45px;
      height: 25px;
@@ -31,6 +41,9 @@ font-size: 0.6em;
 .red {
   background-color: #C13434;
     padding: 7px;
+    display: flex;
+    vertical-align: middle;
+     justify-content: center;
     text-align: center;
      width: 45px;
      height: 25px;
@@ -39,6 +52,9 @@ font-size: 0.6em;
 .purple {
   background-color: #B1439F;
     padding: 7px;
+    display: flex;
+    vertical-align: middle;
+     justify-content: center;
     text-align: center;
      width: 45px;
      height: 25px;
