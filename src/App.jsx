@@ -3,9 +3,8 @@ import './global.scss';
 
 // COMPONENTS
 import Forecast from './components/Forecast';
-import Topstories from './components/Topstories';
-import Gallery from './components/Gallery.jsx';
-
+import Topstories from './components/TopStories';
+import Gallery from './components/Gallery';
 
 // IMAGES
 import Marsgif from './assets/Mars.gif';

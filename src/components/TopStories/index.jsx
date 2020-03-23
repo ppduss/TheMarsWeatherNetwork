@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
-import './topstories.scss';
+import './TopStories.scss';
 // CAROUSEL
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 // IMAGES
-import manfell from '../assets/images43/manfell.jpeg';
-import atmosphere from '../assets/images43/atmosphere.jpeg';
-import korolevcrater from '../assets/images43/korolevcrater.jpeg';
-import aliens from '../assets/images43/aliens.jpeg';
-import impact from '../assets/images43/impactcrater.jpeg';
-import marstrue from '../assets/images43/marstrue.jpeg';
+import manfell from '../../assets/images43/manfell.jpeg';
+import atmosphere from '../../assets/images43/atmosphere.jpeg';
+import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
+import aliens from '../../assets/images43/aliens.jpeg';
+import impact from '../../assets/images43/impactcrater.jpeg';
+import marstrue from '../../assets/images43/marstrue.jpeg';
 
 
 // const [dimensions, setDimensions] = useState(window.innerWidth);

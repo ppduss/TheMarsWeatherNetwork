@@ -1,0 +1,62 @@
+.forecast_main-component {
+// height: 65vh;
+// width: 90vw;
+background-color: #F7F4E0 ;
+// flex-direction: column;
+// flex: ;
+}
+.forecast_container {
+  background-color: #103044;
+  // min-width: 200px;
+  height: 65vh;
+  width: 90vw;
+}
+.sol_container {
+  display: flex;
+  flex-direction: row;
+  // width: 90vw;
+  max-width: 1200px;
+  min-width: 750px;
+  height: 50vh;
+  background-color: #103044;
+  flex-wrap: wrap;
+  // align-content: flex-end;
+  // align-items: ;
+}
+.sol {
+  color: rgb(0, 0, 0);
+  font-size: calc(0.75em + 0.2vw);
+  line-height: 25px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // padding: 9px;
+  margin: 8px 3px;
+  // width: 160px;
+  background-color: #F7F4E0;
+}
+.block {
+  margin: 10px 12px;
+}
+.day {
+  background-color: rgb(247, 229, 224);
+  // margin: 4px 0px
+}
+.temperature {
+  background-color: rgb(138, 135, 119);
+  // margin: 4px 0px
+}
+.wind {
+  background-color: rgb(237, 224, 247);
+  // margin: 4px 0px
+}
+.pressure {
+  background-color: #4c93c0;
+  // margin: 4px 0px
+}
+
+.UVindex_container {
+  margin: auto;
+  background-color: rgb(185, 185, 250);
+}

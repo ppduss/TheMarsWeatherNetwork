@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './forecast.scss';
+import './Forecast.scss';
 import axios from 'axios';
 // COMPONENTS
 import UVindex from './UVindex';
@@ -59,25 +59,27 @@ const Forecast = () => {
         };
         return (
           <>
-
-            <div className="sol">Sol: {sol}
-              <div>
-                {`${generateDate()} ${day.First_UTC.slice(8, 10)}`}
+            <div className="sol">
+              <div className="day">
+                <div>
+                  {`${generateDate()} ${day.First_UTC.slice(8, 10)}`}
+                </div>
+                <div>Sol {sol}</div>
               </div>
-
-              <div>{Math.round(day.AT.av)}°C</div>
-              <div>{Math.round(day.AT.mx)}°C</div>
-              <div>{Math.round(day.AT.mn)}°C</div>
-              {/* </div> */}
-              {/* <div className="wind-speed">Wind Speed */}
-              <div>{Math.round(day.HWS.av)}</div>
-              <div>{Math.round(day.HWS.mn)}</div>
-              <div>{Math.round(day.HWS.mx)}</div>
-              <div>{day.WD.most_common.compass_point}</div>
-              {/* </div> */}
-              {/* <div className="atmospheric-pressure">Atmospheric Pressure */}
-              <div>{Math.round(day.PRE.av)}</div>
-              {/* </div>          */}
+              <div className="temperature">
+                <div className="block">{Math.round(day.AT.av)}°C</div>
+                <div className="block">{Math.round(day.AT.mx)}°C</div>
+                <div className="block">{Math.round(day.AT.mn)}°C</div>
+              </div>
+              <div className="wind">.
+                <div className="block">{Math.round(day.HWS.av)} m/s</div>
+                <div className="block">{Math.round(day.HWS.mn)} m/s</div>
+                <div className="block">{Math.round(day.HWS.mx)} m/s</div>
+                <div className="block">{day.WD.most_common.compass_point}</div>
+              </div>
+              <div className="pressure">
+                <div className="block">{Math.round(day.PRE.av)} Pa</div>
+              </div>
             </div>
             {/* // </div> */}
           </>
@@ -95,28 +97,30 @@ const Forecast = () => {
 
   const ForecastContent = () => (
 
-    <div className="container_forecast">
+    <div className="forecast_container">
       <div className="spacer" />
-      <div className="main-component_forecast">
-        {/* <div>The latest weather updates from Elysium Planitia, Mars. </div> */}
+      <div className="forcast_main-component">
         <div className="sol_container">
           <div>
-            <div className="sol">Sol:
-              <div>Earth date</div>
+            <div className="sol">
+              <div className="day">
+                <div>Earth date</div>
+                <div>Martian date</div>
+              </div>
               <div className="temperature">
-                <div>.</div>
-                <div>High: </div>
-                <div>Low:</div>
-
+                <div className="block">Avg. Temp</div>
+                <div className="block">High </div>
+                <div className="block">Low</div>
               </div>
-              <div>
-                <div>Av. Wind Speed:</div>
-                <div>Low: </div>
-                <div>High:</div>
-                <div>Av. Direction:</div>
+              <div className="wind">
+                <div className="block">Wind Speed</div>
+                <div className="block">Avg.</div>
+                <div className="block">Low</div>
+                <div className="block">High</div>
+                <div className="block">Avg. Direction</div>
               </div>
-              <div>
-                <div>Av. Pressure: </div>
+              <div className="pressure">
+                <div className="block">Avg. Pressure </div>
               </div>
             </div>
           </div>
