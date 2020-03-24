@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 import './Forecast.scss';
 import axios from 'axios';
 // COMPONENTS
-import UVindex from './UVindex';
-
 
 const Forecast = () => {
   const [weatherData, setWeatherData] = useState(undefined);
@@ -125,10 +123,6 @@ const Forecast = () => {
             </div>
           </div>
           {displayDay()}
-        </div>
-        <div className="spacer_small" />
-        <div className="UVindex_container">
-          <UVindex />
         </div>
 
       </div>

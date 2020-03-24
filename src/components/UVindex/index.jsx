@@ -3,9 +3,9 @@ import './UVindex.scss';
 
 const UVindex = () => {
   const UVcontent = () => (
-    <div>
+    <div className="UV_main">
       <div>UV index</div>
-      <div className="UVindex_main">
+      <div className="UVlevels">
         <div>
           <div className="green">LOW</div>
         </div>
@@ -22,6 +22,7 @@ const UVindex = () => {
           <div className="purple">EXTREME</div>
         </div>
       </div>
+      <div className="extreme">SPF 100 sunscreen strongly suggested</div>
     </div>
   );
 
