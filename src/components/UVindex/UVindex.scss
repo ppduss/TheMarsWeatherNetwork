@@ -1,79 +1,53 @@
 
 .UV_main{
   width: 300px;
-  background-color: mistyrose;
+  background-color: gainsboro;
 }
 .UVlevels {
 display: flex;
 flex-wrap: wrap;
 font-size: 0.5em;
 }
-
-.green {
+.UVtitle {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+  font-size: 1.1rem;
+  width: 150px;
+  height: 30px;
+}
+.color {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 60px;
+  height: 45px;
+  align-items: center;
+  &.green {
   background-color: #4CA34B;
-  padding: 7px;
-  display: flex;
-  vertical-align: middle;
-  justify-content: center;
-  text-align: center;
-  width: 45px;
-  height: 25px;
-  align-items: center;
-}
-.yellow {
+  } &.yellow {
   background-color: #F1F221;
-  padding: 7px;
-  display: flex;
-  vertical-align: middle;
-  justify-content: center;
-  text-align: center;
-  width: 45px;
-  height: 25px;
-  align-items: center;
-}
-.orange {
+  } &.orange {
   background-color: #D16E14;
-  padding: 7px;
-  display: flex;
-  vertical-align: middle;
-  justify-content: center;
-  text-align: center;
-  width: 45px;
-  height: 25px;
-  align-items: center;
-}
-.red {
+  } &.red {
   background-color: #C13434;
-  padding: 7px;
-  display: flex;
-  vertical-align: middle;
-  justify-content: center;
-  text-align: center;
-  width: 45px;
-  height: 25px;
-  align-items: center;
-}
-.purple {
+  } &.purple {
   background-color: #B1439F;
-  padding: 7px;
-  display: flex;
-  vertical-align: middle;
-  justify-content: center;
-  text-align: center;
-  width: 45px;
-  height: 25px;
-  align-items: center;
-  //  border-style: solid;
-  //  border-color: maroon;
-  //  border-collapse: collapse; 
+  }
 }
+
 .extreme {
   background-color: rgb(255, 255, 255);
-  padding: 7px;
+  border-color: #B1439F;
+  border-style: solid;
+  border-width: 5px;
   display: flex;
-  justify-content: center;
-  width: 280px;
-  height: 100px;
   align-items: center;
+  text-align: center;
+  width: 290px;
+  height: 90px;
+  // padding: 10px;
   font-size: 0.8rem;
 }
