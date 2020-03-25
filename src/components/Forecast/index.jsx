@@ -69,7 +69,8 @@ const Forecast = () => {
                 <div className="block">{Math.round(day.AT.mx)}°C</div>
                 <div className="block">{Math.round(day.AT.mn)}°C</div>
               </div>
-              <div className="wind">.
+              <div className="wind">
+                <div className="block">.</div>
                 <div className="block">{Math.round(day.HWS.av)} m/s</div>
                 <div className="block">{Math.round(day.HWS.mn)} m/s</div>
                 <div className="block">{Math.round(day.HWS.mx)} m/s</div>
@@ -83,20 +84,13 @@ const Forecast = () => {
           </>
         );
       });
-      console.log(weatherData);
-      // console.log(solKeysArray);
+
       return output;
     }
   };
 
-  //  go through .sol_keys array
-  // select the weatherData key that matches each .sol_key
-  //
-
   const ForecastContent = () => (
-
     <div className="forecast_container">
-      <div className="spacer" />
       <div className="forcast_main-component">
         <div className="sol_container">
           <div>
