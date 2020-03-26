@@ -1,29 +1,31 @@
 .forecast_main-component {
 // height: 65vh;
 // width: 90vw;
-background-color: #F7F4E0 ;
+background-color: rgb(3, 228, 160) ;
 // flex-direction: column;
 // flex: ;
 }
 .forecast_container {
-  background-color: #103044;
-  height: 65%;
-  width: 90%;
+
+  // background-color: #103044;
+
+  // height: 65%;
+  // width: 90%;
 }
 .sol_container {
   display: flex;
   flex-direction: row;
-  // width: 90vw;
-  max-width: 1200px;
+  // max-width: 100%; 
+
   min-width: 750px;
-  height: 50vh;
+  // height: 50vh;
   flex-wrap: wrap;
-  // align-content: flex-end;
-  // align-items: ;
+
 }
 .sol {
+  font-family: Arial, Helvetica, sans-serif;
   color: rgb(0, 0, 0);
-  font-size: calc(0.75em + 0.2vw);
+  font-size: 0.9rem;
   line-height: 30px;
   text-align: center;
   display: flex;
@@ -31,27 +33,44 @@ background-color: #F7F4E0 ;
   flex-wrap: wrap;
   // padding: 9px;
   margin: 8px 2px;
-  // width: 160px;
+  &.bold {
+    font-weight: 600;
+  }
+  .day {
+    background-color: oldlace;
+    // margin: 4px 0px
+  }
+  .temperature {
+    background-color: papayawhip;
+    // margin: 4px 0px
+    div {
+      margin: 10px 12px;
+    }
+  }
+  .wind {
+    background-color: oldlace;
+    // margin: 4px 0px
+    div {
+      margin: 10px 12px;
+    }
+    .empty-space {
+      height: 2rem;
+    }
+  }
+  .pressure {
+    background-color: papayawhip;
+    // margin: 4px 0px
+    div {
+      margin: 10px 12px;
+    }
+  }
 }
 .block {
   margin: 10px 12px;
 }
-.day {
-  background-color: oldlace;
-  // margin: 4px 0px
-}
-.temperature {
-  background-color: papayawhip
-  // margin: 4px 0px
-}
-.wind {
-  background-color: oldlace;
-  // margin: 4px 0px
-}
-.pressure {
-  background-color: papayawhip
-  // margin: 4px 0px
-}
+
+
+
 
 .UVindex_container {
   width: 300px;

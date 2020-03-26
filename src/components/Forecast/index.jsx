@@ -21,7 +21,7 @@ const Forecast = () => {
   }, []);
 
 
-  const displayDay = () => {
+  const displayDays = () => {
     if (weatherData) {
       // console.log({ newDate });
       const solKeysArray = weatherData.sol_keys;
@@ -65,22 +65,21 @@ const Forecast = () => {
                 <div>Sol {sol}</div>
               </div>
               <div className="temperature">
-                <div className="block">{Math.round(day.AT.av)}°C</div>
-                <div className="block">{Math.round(day.AT.mx)}°C</div>
-                <div className="block">{Math.round(day.AT.mn)}°C</div>
+                <div>{Math.round(day.AT.av)}°C</div>
+                <div>{Math.round(day.AT.mx)}°C</div>
+                <div>{Math.round(day.AT.mn)}°C</div>
               </div>
               <div className="wind">
-                <div className="block">.</div>
-                <div className="block">{Math.round(day.HWS.av)} m/s</div>
-                <div className="block">{Math.round(day.HWS.mn)} m/s</div>
-                <div className="block">{Math.round(day.HWS.mx)} m/s</div>
-                <div className="block">{day.WD.most_common.compass_point}</div>
+                <div className="empty-space" />
+                <div>{Math.round(day.HWS.av)} m/s</div>
+                <div>{Math.round(day.HWS.mn)} m/s</div>
+                <div>{Math.round(day.HWS.mx)} m/s</div>
+                <div>{day.WD.most_common.compass_point}</div>
               </div>
               <div className="pressure">
-                <div className="block">{Math.round(day.PRE.av)} Pa</div>
+                <div>{Math.round(day.PRE.av)} Pa</div>
               </div>
             </div>
-            {/* // </div> */}
           </>
         );
       });
@@ -90,37 +89,32 @@ const Forecast = () => {
   };
 
   const ForecastContent = () => (
-    <div className="forecast_container">
-      <div className="forcast_main-component">
-        <div className="sol_container">
-          <div>
-            <div className="sol">
-              <div className="day">
-                <div>Earth date</div>
-                <div>Martian date</div>
-              </div>
-              <div className="temperature">
-                <div className="block">Avg. Temp</div>
-                <div className="block">High </div>
-                <div className="block">Low</div>
-              </div>
-              <div className="wind">
-                <div className="block">Wind Speed</div>
-                <div className="block">Avg.</div>
-                <div className="block">Low</div>
-                <div className="block">High</div>
-                <div className="block">Avg. Direction</div>
-              </div>
-              <div className="pressure">
-                <div className="block">Avg. Pressure </div>
-              </div>
-            </div>
-          </div>
-          {displayDay()}
+    <div className="sol_container">
+      <div className="sol bold">
+        <div className="day">
+          <div>Earth date</div>
+          <div>Martian date</div>
         </div>
-
+        <div className="temperature">
+          <div>Avg. Temp</div>
+          <div>High </div>
+          <div>Low</div>
+        </div>
+        <div className="wind">
+          <div>Wind Speed</div>
+          <div>Avg.</div>
+          <div>Low</div>
+          <div>High</div>
+          <div>Avg. Direction</div>
+        </div>
+        <div className="pressure">
+          <div>Avg. Pressure </div>
+        </div>
       </div>
+
+      {displayDays()}
     </div>
+
   );
 
   return (
