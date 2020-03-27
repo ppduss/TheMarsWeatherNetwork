@@ -19,7 +19,6 @@ background-color: rgb(3, 228, 160) ;
 
   min-width: 750px;
   // height: 50vh;
-  flex-wrap: wrap;
 
 }
 .sol {
@@ -34,7 +33,7 @@ background-color: rgb(3, 228, 160) ;
   // padding: 9px;
   margin: 8px 2px;
   &.bold {
-    font-weight: 600;
+    font-weight: 500;
   }
   .day {
     background-color: oldlace;

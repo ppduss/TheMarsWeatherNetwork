@@ -1,5 +1,5 @@
 import React from 'react';
-import './global.scss';
+import './App.scss';
 // COMPONENTS
 import Forecast from './components/Forecast';
 import Topstories from './components/TopStories';

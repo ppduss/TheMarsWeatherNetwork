@@ -1,67 +1,31 @@
-/* 
-  usage of pixels: fonts, borders
-  otherwise use rem for most things
-  usage of percentages: width, (sometimes) height, because it is in reference to the parent container
-  usage of vh and vw: only with absolute root elements (and even then, not really)
-*/
 body {
   margin: 0;
 }
 
-.main-component_container {
-  display: grid;
-  // grid-template-columns: repeat(5, 200px);
-  grid-template-columns: repeat(6, 16.666%);
-  grid-template-rows: repeat(12, 120px);
-  // background-color: #29717A;
-  // background-color: #1d7696;
-  background-color: #5DA6A1;
-}
+$pal1teal: #257978;
+$pal1green: #355A4A;
+$pal1yellow: #CDC883;
+$pal1red: #8E2426;
+$pal1grey: #969A99;
+$pal1beige: #CCC9B6;
 
-.main-component_header {
-  font-size: calc(0.8rem);
-  display: flex;
-  align-items: center;
-  background-color: black;
-  width: 700px;
-  .mars-gif {
-  height: calc(6rem);
-  }
-  .title {
-  color: #F7F4E0;
-  font-size: 1.8em;
-  }
-  .sub-title {
-  color: #F7F4E0;
-  font-size: 0.85em;
-  }
-}
-
-//COMPONENT CONTAINERS//
-.header_container {
-  background-color: rgb(128, 70, 70);
-  grid-row: 1/2;
-  grid-column: 1/5;
-}
-.forecast_container {
-  grid-row: 2/6;
-  grid-column: 1/7;
-  background-color: salmon;
-
-}
-.gallery_container {
-  grid-row: 11/12;
-  grid-column: 1/6;
-}
-.top-stories_container {
-  grid-row: 8/10;
-  grid-column: 1/3;
-  width: 600px;
-  background-color: mediumseagreen;
-}
-.UVindex_container {
-  grid-row: 6/8;
-  grid-column: 1/3;
-}
+$pal2teal: #005C67;
+$pal2babybrown: #8C6F4D;
+$pal2butter: #E5CEA0;
+$pal2winestain: #664A52;
+$pal2wine: #67283E;
 
 
+@mixin exampleMixin {
+  color: blue;
+  background: blue;
+}
+
+@mixin mixinWithParams($this, $that) {
+  color: $this;
+  background: $that;
+}
+
+@mixin usingOtherMixin {
+  @include mixinWithParams(blue, red);
+}
