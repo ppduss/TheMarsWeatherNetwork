@@ -9,7 +9,7 @@
 .main-component_wrapper {
   display: grid;
   width: 100%;
-  // grid-template-columns: 1fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-areas:
     "theheader"
     "forecast"
@@ -18,7 +18,7 @@
     "topstories";
   // grid-template-columns: repeat(6, 16.666%);
   // grid-auto-rows: auto;
-  gap: 1%;
+  gap: 0.5%;
   // background-color: #29717A;
   // background-color: #1d7696;
   background-color: $pal2butter;
@@ -68,14 +68,13 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 980px) {
   .main-component_wrapper {
-    background: yellow;
+    background: lightsalmon;
     grid-template-areas: 
-      "theheader"
+      "theheader theheader"
       "forecast UVindex" 
-      "gallery"
-      "topstories";
-    grid-column: 4fr 2fr;
+      "gallery gallery"
+      "topstories topstories";
   }
 }

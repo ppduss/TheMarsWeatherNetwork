@@ -15,21 +15,24 @@ import marstrue from '../../assets/images43/marstrue.jpeg';
 const Gallery = () => (
   <div>
     <div className="top-stories_header">Gallery</div>
-    <div>  <Carousel
-      centered
-      dots
-      infinite
-      slidesPerPage={4}
-      offset={0}
->
+    <div>
+      <Carousel
+        // centered
+        dots
+        infinite
+        slidesPerPage={4}
+        offset={0}
+      >
 
+        <img src={marstrue} alt="true" width={300} />
+        <img src={impact} alt="impact" width={300} />
+        <img src={atmosphere} alt="atmosphere" width={300} />
+        <img src={korolevcrater} alt="crater" width={300} />
+        <img src={marstrue} alt="true" width={300} />
+        <img src={impact} alt="impact" width={300} />
+        <img src={atmosphere} alt="atmosphere" width={300} />
 
-      <img src={korolevcrater} width={300} />
-      <img src={marstrue} width={300} />
-      <img src={impact} width={300} />
-      <img src={atmosphere} width={300} />
-
-           </Carousel>
+      </Carousel>
     </div>
     <div className="top-stories_content" />
 
