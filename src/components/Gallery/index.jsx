@@ -4,11 +4,11 @@ import React from 'react';
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 // IMAGES
-import manfell from '../../assets/images43/manfell.jpeg';
+// import manfell from '../../assets/images43/manfell.jpeg';
 // import manfell2 from '../assets/images43/manfell2.jpeg';
 import atmosphere from '../../assets/images43/atmosphere.jpeg';
 import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
-import aliens from '../../assets/images43/aliens.jpeg';
+// import aliens from '../../assets/images43/aliens.jpeg';
 import impact from '../../assets/images43/impactcrater.jpeg';
 import marstrue from '../../assets/images43/marstrue.jpeg';
 

@@ -1,10 +1,4 @@
 @import './global.scss';
-/* 
-  usage of pixels: fonts, borders
-  otherwise use rem for most things
-  usage of percentages: width, (sometimes) height, because it is in reference to the parent container
-  usage of vh and vw: only with absolute root elements (and even then, not really)
-*/
 
 .main-component_wrapper {
   display: grid;
@@ -28,6 +22,8 @@
     display: flex;
     align-items: center;
     background-color: black;
+    font-family: 'Chicago';
+    
     // width: 700px;
     .mars-gif {
     height: calc(6rem);

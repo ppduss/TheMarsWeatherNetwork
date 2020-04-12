@@ -68,9 +68,9 @@ const topstories = () => (
           <p className="story_txt">2020's hottest destination ?</p>
         </div>
 
-        <img src={marstrue} alt="image" width={300} />
-        <img src={impact} alt="image" width={300} />
-        <img src={atmosphere} alt="image" width={300} />
+        <img src={marstrue} alt="mars true" width={300} />
+        <img src={impact} alt="impact" width={300} />
+        <img src={atmosphere} alt="atmosphere" width={300} />
 
 
       </Carousel>
