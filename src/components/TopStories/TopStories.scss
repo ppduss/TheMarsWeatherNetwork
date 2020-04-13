@@ -1,10 +1,12 @@
+@import '../../global.scss';
+
 .carousel-container {
   width: 90vw ;
 }
 
 .top-stories_header {
   // background-color: #103044;
-    background-color: #bd7dab;
+    background-color: $offwhite;
     width: 30vw;
 }
 .top-stories_content {
@@ -14,7 +16,7 @@
   //  width: 85vw;
 }
 .story {
-  background-color:#bd7dab;
+  background-color: $marsred;
   max-width: 250px;
   
 }

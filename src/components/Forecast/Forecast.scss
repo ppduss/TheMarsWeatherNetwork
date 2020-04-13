@@ -1,7 +1,8 @@
+@import '../../global.scss';
+
 .forecast_main-component {
 // height: 65vh;
 // width: 90vw;
-background-color: rgb(3, 228, 160) ;
 // flex-direction: column;
 // flex: ;
 }
@@ -14,9 +15,9 @@ background-color: rgb(3, 228, 160) ;
   // height: 50vh;
 }
 .sol {
-  font-family: Arial, Helvetica, sans-serif;
-  color: rgb(0, 0, 0);
-  font-size: 0.9rem;
+  color: $night;
+  background-color: $offwhite;
+  font-size: 0.85rem;
   line-height: 30px;
   text-align: center;
   display: flex;
@@ -28,18 +29,18 @@ background-color: rgb(3, 228, 160) ;
     font-weight: 500;
   }
   .day {
-    background-color: oldlace;
+    // background-color: #355A4A;
     // margin: 4px 0px
   }
   .temperature {
-    background-color: papayawhip;
+    // background-color:#355A4A;
     // margin: 4px 0px
     div {
       margin: 10px 12px;
     }
   }
   .wind {
-    background-color: oldlace;
+    // background-color: #355A4A;
     // margin: 4px 0px
     div {
       margin: 10px 12px;
@@ -49,7 +50,7 @@ background-color: rgb(3, 228, 160) ;
     }
   }
   .pressure {
-    background-color: papayawhip;
+    // background-color: #355A4A;
     // margin: 4px 0px
     div {
       margin: 10px 12px;
@@ -63,5 +64,6 @@ background-color: rgb(3, 228, 160) ;
 
 .UVindex_container {
   width: 300px;
-  background-color: rgb(185, 185, 250);
+  height: 173px;
+
 }

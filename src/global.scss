@@ -1,25 +1,36 @@
 @font-face {
   font-family: 'Chicago';
-  src: url('/src/fonts/Chicago-Regular.woff') format('woff');
-}
-
+  src: url('./fonts/Chicago-Regular.woff') format('woff');
+  }
+@font-face {
+  font-family: "Charcoal";
+  src: url("./fonts/Charcoal.woff") format("woff")
+  }
+@font-face {
+  font-family: "KarbonTest";
+  src: local("Karbon Test thin")
+  }
+@font-face {
+  font-family: "Charcoal";
+  src: url("./fonts/Charcoal.woff") format("woff")
+  }
+  
 
 body {
   margin: 0;
 }
 
-$pal1teal: #257978;
-$pal1green: #355A4A;
-$pal1yellow: #CDC883;
-$pal1red: #8E2426;
-$pal1grey: #969A99;
-$pal1beige: #CCC9B6;
+$night: #1d3245;
+$offwhite: #fafafa;
+$basepink: #f5d2d2;
+$marsorange: #bf7c6d;
+$marsred: #9d5353;
 
-$pal2teal: #005C67;
-$pal2babybrown: #8C6F4D;
-$pal2butter: #E5CEA0;
-$pal2winestain: #664A52;
-$pal2wine: #67283E;
+$deepgreen: #256167;
+$offwhite: #fafafa;
+$lightpink: #f0c0c0;
+$deepsalmon: #d16366;
+$deepred: #a54351;
 
 
 @mixin exampleMixin {
