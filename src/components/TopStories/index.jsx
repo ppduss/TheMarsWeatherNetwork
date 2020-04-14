@@ -28,7 +28,11 @@ import marstrue from '../../assets/images43/marstrue.jpeg';
 
 
 const slidesPerPage = () => {
-  if (window.innerWidth < 1000) {
+  if (window.innerWidth < 500) {
+    return (1);
+  } if ((window.innerWidth >= 500) && (window.innerWidth <= 830)) {
+    return (2);
+  } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
     return (3);
   } return (4);
 };
@@ -39,9 +43,9 @@ const topstories = () => (
     <div className="top-stories_header">Top Stories</div>
     <div className="carousel-container">
       <Carousel
-        centered
+        // centered
         dots
-        // infinite
+        infinite
         slidesPerPage={slidesPerPage()}
         offset={0}
       >
@@ -50,8 +54,8 @@ const topstories = () => (
           <a href="https://en.uncyclopedia.co/wiki/Ancient_Aliens">
             <img src={aliens} alt="Is there life on Mars ?" className="story" />
           </a>
-          <span className="story_txt_title">Life on Mars ?</span>
-          <p className="story_txt">You’ll never guess what Giorgio Tsoukalos has to say about it !</p>
+          <span className="story_txt_title">What's on Mars ?</span>
+          <p className="story_txt">You’ll never guess Tsoukalos' one-word answer !</p>
         </div>
         <div className="story">
           <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
@@ -65,12 +69,15 @@ const topstories = () => (
             <img src={korolevcrater} alt="Korolev" className="story" />
           </a>
           <span className="story_txt_title">The Korolev Crater</span>
-          <p className="story_txt">2020's hottest destination ?</p>
+          <p className="story_txt">2020's hottest destination !</p>
         </div>
-
-        <img src={marstrue} alt="mars true" width={300} />
-        <img src={impact} alt="impact" width={300} />
-        <img src={atmosphere} alt="atmosphere" width={300} />
+        <div className="story">
+          <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
+            <img src={korolevcrater} alt="Korolev" className="story" />
+          </a>
+          <span className="story_txt_title">The Korolev Crater</span>
+          <p className="story_txt">2020's hottest destination !</p>
+        </div>
 
 
       </Carousel>

@@ -6,7 +6,7 @@
 
 .top-stories_header {
   // background-color: #103044;
-    background-color: $offwhite;
+    background-color: $deepgreen;
     width: 30vw;
 }
 .top-stories_content {
@@ -18,7 +18,7 @@
 .story {
   background-color: $marsred;
   max-width: 250px;
-  
+  margin: 2px;
 }
 .story_txt {
   color: white;
@@ -30,5 +30,5 @@
 .story_txt_title {
   color: white;
     // padding: 4px;
-      margin: 5px
+      // margin: 5px
 }

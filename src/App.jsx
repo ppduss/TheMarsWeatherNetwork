@@ -13,7 +13,7 @@ function App() {
     <div className="main-component_wrapper">
       <div className="header_container">
         <header className="main-component_header">
-          <img className="mars-gif" alt="marsgif" src={Marsgif} />
+          {/* <img className="mars-gif" alt="marsgif" src={Marsgif} /> */}
           <div className="titles_group">
             <div className="title">The Mars Weather Network</div>
             <div className="sub-title">The latest weather updates from Elysium Planitia. </div>

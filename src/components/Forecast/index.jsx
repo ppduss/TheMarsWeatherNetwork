@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './Forecast.scss';
 import axios from 'axios';
-// COMPONENTS
 
 const Forecast = () => {
   const [weatherData, setWeatherData] = useState(undefined);
@@ -111,7 +110,6 @@ const Forecast = () => {
           <div>Avg. Pressure </div>
         </div>
       </div>
-
       {displayDays()}
     </div>
 
