@@ -1,7 +1,5 @@
 @import './global.scss';
 
-
-
 .main-component_wrapper {
   display: grid;
   width: 100%;
@@ -14,44 +12,37 @@
     "topstories"
     "empty";
   justify-items: center;
-  // grid-template-columns: repeat(6, 16.666%);
-  // grid-auto-rows: auto;
   gap: 0.5%;
-  background-color: $offwhite;
+  background-color: $pal1black;
 
   .main-component_header {
     font-size: calc(0.9rem);
     align-items: center;
     justify-content: left;
-    background-color: $deepred;
+    background-color: $pal1yellow;
     padding: 12px ;
-   
     // .mars-gif {
     // height: calc(6rem);
     // }
     .title {
-    color: $offwhite;
-    font-size: 2.4em;
+    color: $pal1black;
+    font-size: 2.4rem;
     font-family: 'KarbonTest';
     }
     .sub-title {
-    color: $offwhite;
-    font-size: 0.85em;
+    color: $pal1black;
+    font-size: 0.7rem;
     }
   }
 
   //COMPONENT CONTAINERS//
   .header_container {
-    background-color: rgb(128, 70, 70);
     grid-area: theheader;
-    max-width: 500px;
   }
   .forecast_container {
     grid-area: forecast;
     max-width: 700px;
-    background-color: $lightpink;
-   
-
+    background-color: $pal1black;
   }
   .gallery_container {
     grid-area: gallery;
@@ -66,7 +57,6 @@
   .UVindex_container {
     grid-area: UVindex;
     grid-template-columns: minmax(600px, 100%);
-    background-color: red;
   }
   .empty {
     grid-area: empty;
@@ -81,6 +71,6 @@
       ". forecast UVindex ." 
       ". gallery gallery ."
       ". topstories topstories .";
-    gap: 2%;
+    gap: 1%;
   }
 }

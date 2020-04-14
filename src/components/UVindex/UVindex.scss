@@ -1,34 +1,35 @@
 @import '../../global.scss';
 
 .UV_main{
+  font-family: 'Lato', sans-serif;
   width: 300px;
   border-style: solid;
-  border-color: $deepsalmon;
-  background-color: $lightpink;
+  border-color: $pal1brown;
+  background-color: $pal1brown;
   border-width: 4px;
   border-radius: 4px;
 }
 .UVlevels {
 display: flex;
 flex-wrap: wrap;
-font-size: 0.5em;
+font-size: 0.6rem;
 }
 .UVtitle {
-  font-family: 'Roboto', sans-serif;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 3px;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
   // width: 150px;
-  height: 30px;
+  height: 35px;
 }
 .color {
   display: flex;
   justify-content: center;
   text-align: center;
   width: 60px;
-  height: 45px;
+  height: 50px;
   align-items: center;
   &.green {
   background-color: #4CA34B;
@@ -44,20 +45,18 @@ font-size: 0.5em;
 }
 
 .extreme {
-  // border-color: #B1439F;
-  // border-style: solid;
-  // border-width: 5px;
-  font-family: 'Roboto', sans-serif;
+  // font-family: 'Roboto', sans-serif;
+  color: white;
   display: flex;
   align-items: center;
   text-align: center;
   width: 300px;
   height: 90px;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   .purple {
-  background-color: #B1439F;
-  // height: 30px;
-  margin: 4px;
-  padding: 10px;
-  }
+    color: black;
+    background-color: #B1439F;
+    margin: 4px;
+    padding: 10px;
+    }
 }
