@@ -5,6 +5,7 @@ import Forecast from './components/Forecast';
 import Topstories from './components/TopStories';
 import Gallery from './components/Gallery';
 import UVindex from './components/UVindex/index';
+import APOD from './components/APOD/apod';
 // IMAGES
 import Marsgif from './assets/Mars.gif';
 
@@ -25,6 +26,9 @@ function App() {
       </div>
       <div className="UVindex_container">
         <UVindex />
+      </div>
+      <div className="APOD_container">
+        <APOD />
       </div>
       <div className="top-stories_container">
         <Topstories />

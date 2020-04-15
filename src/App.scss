@@ -5,12 +5,11 @@
   width: 100%;
   grid-template-columns: 4fr 1fr;
   grid-template-areas:
-    "theheader"
-    "forecast"
-    "UVindex" 
-    "gallery"
-    "topstories"
-    "empty";
+    "theheader theheader"
+    "forecast forecast"
+    "UVindex APOD" 
+    "gallery gallery"
+    "topstories topstories";
   justify-items: center;
   gap: 0.5%;
   background-color: $pal1black;
@@ -44,6 +43,13 @@
     max-width: 700px;
     background-color: $pal1black;
   }
+  .UVindex_container {
+    grid-area: UVindex;
+    grid-template-columns: minmax(600px, 100%);
+  }
+  .APOD_container {
+    grid-area: APOD;
+  }
   .gallery_container {
     grid-area: gallery;
     max-width: 95vw;
@@ -54,21 +60,15 @@
     background-color: $offwhite;
     max-width: 95vw;
   }
-  .UVindex_container {
-    grid-area: UVindex;
-    grid-template-columns: minmax(600px, 100%);
-  }
-  .empty {
-    grid-area: empty;
-  }
 }
 
 @media (min-width: 980px) {
   .main-component_wrapper {
-    grid-template-columns: 2% 4fr 4fr 2%;
+    grid-template-columns: 3% 4fr 4fr 3%;
     grid-template-areas: 
       ". theheader theheader ."
       ". forecast UVindex ." 
+      ". forecast APOD ."
       ". gallery gallery ."
       ". topstories topstories .";
     gap: 1%;
