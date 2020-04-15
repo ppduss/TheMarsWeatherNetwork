@@ -5,7 +5,7 @@ import Forecast from './components/Forecast';
 import Topstories from './components/TopStories';
 import Gallery from './components/Gallery';
 import UVindex from './components/UVindex/index';
-import APOD from './components/APOD/apod';
+import APOD from './components/APOD/index';
 // IMAGES
 import Marsgif from './assets/Mars.gif';
 

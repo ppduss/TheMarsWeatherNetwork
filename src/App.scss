@@ -1,5 +1,37 @@
 @import './global.scss';
 
+a:link {
+  text-decoration: none;
+}
+a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+a:active {
+  text-decoration: none;
+}
+
+.title {
+  color: $pal1yellow;
+
+}
+.bottom_text {
+  color: white;
+  font-size: 0.85rem;
+  text-decoration: underline;
+  
+
+}
+.description {
+color: white;
+font-weight: 300;
+font-size: 0.85rem;
+line-height: 18px;
+text-decoration: none;
+}
+
 .main-component_wrapper {
   display: grid;
   width: 100%;
@@ -42,23 +74,28 @@
     grid-area: forecast;
     max-width: 700px;
     background-color: $pal1black;
+    // border: $pal1yellow;
+    // border-style: solid;
+    // border-width: 1px;
+    // border-radius: 2px;
   }
   .UVindex_container {
     grid-area: UVindex;
-    grid-template-columns: minmax(600px, 100%);
   }
   .APOD_container {
     grid-area: APOD;
+    background-color: $pal1blue;
+    
   }
   .gallery_container {
     grid-area: gallery;
-    max-width: 95vw;
+    max-width: 95%;
   }
   .top-stories_container {
     grid-area: topstories;
     // width: 500px;
     background-color: $offwhite;
-    max-width: 95vw;
+    max-width: 95%;
   }
 }
 
