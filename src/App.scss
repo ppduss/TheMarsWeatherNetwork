@@ -1,4 +1,5 @@
 @import './global.scss';
+@import './assets/Footer/mountain.png'
 
 a:link {
   text-decoration: none;
@@ -43,6 +44,7 @@ text-decoration: none;
   justify-items: center;
   gap: 0.5%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 80%, #090A0F 100%);
+  // z-index: 0;
   // overflow: hidden;
 
   .main-component_header {
@@ -103,13 +105,17 @@ text-decoration: none;
   }
   .footer_wrapper {
   grid-area: footer;
-  height: 200px; 
-  width: 100%;
-  z-index: 3;
+  // height: 200px; 
+  // width: 100%;
+  z-index: 0;
   // @include saw-tooth-vertical();
-
+  // background-color: red;
+  background-image: url(./assets/Footer/mountain.png);
+  background-size: 1000px 200px;
+  background-repeat: repeat-x;
+  // background: url(./assets/Footer/mountain.png);
   }
-}
+};
 
 @media (min-width: 980px) {
   .main-component_wrapper {
@@ -229,6 +235,6 @@ $shadows-big:    multiple-box-shadow(100);
   background-color: black;
   // background-image: linear-gradient(transparent, rgb(165, 45, 45));
   
-  @include saw-tooth-vertical();
+  // @include saw-tooth-vertical();
   // @include saw-tooth-vertical2();
 }
