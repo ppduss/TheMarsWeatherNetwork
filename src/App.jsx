@@ -11,7 +11,7 @@ import Marsgif from './assets/Mars.gif';
 
 function App() {
   const Maincomponent = () => (
-    <div className="main-component_wrapper">
+    <div className="main-component_wrapper" id="stars stars2 stars3">
       <div className="header_container">
         <header className="main-component_header">
           {/* <img className="mars-gif" alt="marsgif" src={Marsgif} /> */}
@@ -35,6 +35,9 @@ function App() {
       </div>
       <div className="gallery_container">
         <Gallery />
+      </div>
+      <div className="footer_wrapper">
+        <div className="banner-vertical" />
       </div>
     </div>
   );

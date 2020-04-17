@@ -1,5 +1,86 @@
 @import './global.scss';
 
+// n is number of stars required
+
+@function multiple-box-shadow ($n) {
+  $value: '#{random(2000)}px #{random(2000)}px #FFF';
+  @for $i from 2 through $n {
+    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #FFF';
+  };
+  @return unquote($value)
+};
+
+$shadows-small:  multiple-box-shadow(700);
+$shadows-medium: multiple-box-shadow(200);
+$shadows-big:    multiple-box-shadow(100);
+
+
+// html {
+//   height: 100%;
+//   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 80%, #090A0F 100%);
+//   overflow: hidden;
+// };
+
+#stars {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-small;
+  animation: animStar 800s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-small;
+  }
+};
+
+#stars2 {
+  width: 1px;
+  height: 1px;
+  background: transparent;
+  box-shadow: $shadows-medium;
+  animation			: animStar 600s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 1px;
+    height: 1px;
+    background: transparent;
+    box-shadow: $shadows-medium;
+  }
+};
+
+#stars3 {
+  width: 2px;
+  height: 2px;
+  background: transparent;
+  box-shadow: $shadows-big;
+  animation			: animStar 550s linear infinite;
+    
+  &:after {
+    content: " ";
+    position: absolute;
+    top: 2000px;
+    width: 2px;
+    height: 2px;
+    background: transparent;
+    box-shadow: $shadows-big;
+  }
+};
+  
+@keyframes animStar {
+  from {transform: translateY(0px)}
+  to {transform: translateY(-2000px)}
+}
+
+
 a:link {
   text-decoration: none;
 }
@@ -15,14 +96,11 @@ a:active {
 
 .title {
   color: $pal1yellow;
-
 }
 .bottom_text {
   color: white;
   font-size: 0.85rem;
   text-decoration: underline;
-  
-
 }
 .description {
 color: white;
@@ -31,6 +109,34 @@ font-size: 0.85rem;
 line-height: 18px;
 text-decoration: none;
 }
+
+
+@mixin saw-tooth-vertical() {
+  background-image:
+    linear-gradient(0deg, transparent 10%, $pal1black 95%),
+    linear-gradient(135deg, $pal1blue 78%, transparent 70%),
+    linear-gradient(225deg, $pal1blue 78%, transparent 70%);
+    // linear-gradient(0deg, red 100%, $pal1blue 10%)
+  background-size: 70px 240px;
+  background-repeat: repeat-x;
+}
+// @mixin saw-tooth-vertical2() {
+//   background-image:
+//     // linear-gradient(0deg, transparent 30%, yellow 95%),
+//     linear-gradient(135deg, $pal1yellow 90%, transparent 90%),
+//     linear-gradient(225deg, $pal1yellow 90%, transparent 90%);
+//     // linear-gradient(0deg, red 100%, $pal1blue 10%)
+//   background-size: 20px 250px;
+//   background-repeat: no-repeat;
+// }
+.banner-vertical {
+  height: 350px;
+  background-color: black;
+  
+  @include saw-tooth-vertical();
+  // @include saw-tooth-vertical2();
+}
+
 
 .main-component_wrapper {
   display: grid;
@@ -41,7 +147,8 @@ text-decoration: none;
     "forecast forecast"
     "UVindex APOD" 
     "gallery gallery"
-    "topstories topstories";
+    "topstories topstories"
+    "footer footer";
   justify-items: center;
   gap: 0.5%;
   background-color: $pal1black;
@@ -97,6 +204,13 @@ text-decoration: none;
     background-color: $offwhite;
     max-width: 95%;
   }
+  .footer_wrapper {
+  grid-area: footer;
+  height: 200px; 
+  width: 100%;
+  // @include saw-tooth-vertical();
+
+  }
 }
 
 @media (min-width: 980px) {
@@ -107,7 +221,8 @@ text-decoration: none;
       ". forecast UVindex ." 
       ". forecast APOD ."
       ". gallery gallery ."
-      ". topstories topstories .";
+      ". topstories topstories ."
+      "footer footer footer footer";
     gap: 1%;
   }
 }
