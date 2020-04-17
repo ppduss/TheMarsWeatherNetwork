@@ -19,14 +19,12 @@ const Forecast = () => {
     fetchWeather();
   }, []);
 
-
   const displayDays = () => {
     if (weatherData) {
       // console.log({ newDate });
       const solKeysArray = weatherData.sol_keys;
       const output = solKeysArray.map((sol) => {
         const day = weatherData[sol];
-
         const generateDate = () => {
           if (day.First_UTC.slice(5, 7) === '01') {
             return ('Jan');
