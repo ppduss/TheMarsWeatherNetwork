@@ -71,10 +71,10 @@ const Forecast = () => {
                 <div>{Math.round(day.HWS.av)} m/s</div>
                 <div>{Math.round(day.HWS.mn)} m/s</div>
                 <div>{Math.round(day.HWS.mx)} m/s</div>
-                <div>{day.WD.most_common.compass_point}</div>
+                {/* <div>{day.WD.most_common.compass_point}</div> */}
               </div>
               <div className="pressure">
-                <div>{Math.round(day.PRE.av)} Pa</div>
+                <div>` ${Math.day.PRE.av ? 'Math.round(day.PRE.av)' : 'N/a'}`</div>
               </div>
             </div>
           </>

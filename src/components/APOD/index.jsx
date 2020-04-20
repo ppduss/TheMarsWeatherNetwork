@@ -12,7 +12,7 @@ const APOD = () => {
       .then((response) => {
         setPictureOfTheDay(response.data.url);
         setPictureTitle(response.data.title);
-        setDescription(response.data.explanation.slice(0, 200));
+        setDescription(response.data.explanation.slice(0, 180));
         console.log(response.data);
       })
       .catch((error) => {
@@ -27,7 +27,7 @@ const APOD = () => {
     <div className="APOD_main">
       <div className="title">Astronomy Picture of the Day</div>
       <a href="https://apod.nasa.gov/apod/astropix.html">
-        <img className="photograph" src={pictureOfTheDay} alt="broken" />
+        <img className="photograph" src={pictureOfTheDay} alt="Astronomy Picture of the Day" />
         <div className="bottom_text">{pictureTitle}</div>
         <div className="description">{description}...(continued)</div>
       </a>

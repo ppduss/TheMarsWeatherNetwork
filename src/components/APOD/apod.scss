@@ -2,10 +2,13 @@
 
 .APOD_main {
   font-family: 'Roboto', sans-serif;
-  width: 425px;
+  max-width: 415px;
+  max-height: 380px ;
+  // object-fit: contain;
 }
 
 .photograph {
-  width: 425px;
-
+  width: 415px;
+  height: 250px;
+  object-fit: cover;
 }

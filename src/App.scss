@@ -15,7 +15,7 @@ a:active {
 }
 
 .title {
-  color: $pal1yellow;
+  color: $p1yellow;
 }
 .bottom_text {
   color: white;
@@ -37,7 +37,7 @@ text-decoration: none;
   grid-template-areas:
     "theheader theheader"
     "forecast forecast"
-    "UVindex APOD" 
+    " APOD UVindex" 
     "gallery gallery"
     "topstories topstories"
     "footer footer";
@@ -51,18 +51,18 @@ text-decoration: none;
     font-size: calc(0.9rem);
     align-items: center;
     justify-content: left;
-    background-color: $pal1yellow;
+    background-color: $p1yellow;
     padding: 12px ;
     // .mars-gif {
     // height: calc(6rem);
     // }
     .title {
-    color: $pal1black;
+    color: $p1black;
     font-size: 2.4rem;
     font-family: 'KarbonTest';
     }
     .sub-title {
-    color: $pal1black;
+    color: $p1black;
     font-size: 0.7rem;
     }
   }
@@ -75,8 +75,8 @@ text-decoration: none;
   .forecast_container {
     grid-area: forecast;
     max-width: 700px;
-    background-color: $pal1black;
-    // border: $pal1yellow;
+    background-color: $p1black;
+    // border: $p1yellow;
     // border-style: solid;
     // border-width: 1px;
     // border-radius: 2px;
@@ -88,7 +88,7 @@ text-decoration: none;
   }
   .APOD_container {
     grid-area: APOD;
-    background-color: $pal1blue;
+    background-color: $p1navy;
     z-index: 3;
   }
   .gallery_container {
@@ -119,15 +119,30 @@ text-decoration: none;
 
 @media (min-width: 980px) {
   .main-component_wrapper {
-    grid-template-columns: 3% 4fr 4fr 3%;
+    grid-template-columns: 3% 4fr 0% 3fr 3%;
     grid-template-areas: 
-      ". theheader theheader ."
-      ". forecast UVindex ." 
-      ". forecast APOD ."
-      ". gallery gallery ."
-      ". topstories topstories ."
-      "footer footer footer footer";
-    gap: 2%;
+      ". theheader . . ."
+      ". forecast . APOD ." 
+      ". forecast . UVindex ."
+      ". gallery gallery gallery ."
+      ". topstories topstories topstories ."
+      "footer footer footer footer footer";
+    gap: 0.5%;
+
+  }
+}
+@media (min-width: 1600px) {
+  .main-component_wrapper {
+    grid-template-columns: 12% 4fr 1% 3fr 12%;
+    grid-template-areas: 
+      ". theheader . . ."
+      ". forecast . UVindex ." 
+      ". forecast . APOD ."
+      ". gallery gallery gallery ."
+      ". topstories topstories topstories ."
+      "footer footer footer footer footer";
+    gap: 1%;
+
   }
 }
 
@@ -152,7 +167,7 @@ $shadows-big:    multiple-box-shadow(100);
   height: 1px;
   background: transparent;
   box-shadow: $shadows-small;
-  animation: animStar 1000s linear infinite;
+  animation: animStar 900s linear infinite;
 
   &:after {
     content: " ";
@@ -188,7 +203,7 @@ $shadows-big:    multiple-box-shadow(100);
   height: 2px;
   background: transparent;
   box-shadow: $shadows-big;
-  animation: animStar 600s linear infinite;
+  animation: animStar 300s linear infinite;
     
   &:after {
     content: " ";
@@ -215,18 +230,18 @@ $shadows-big:    multiple-box-shadow(100);
 @mixin saw-tooth-vertical() {
   background-image:
     // linear-gradient(0deg, transparent 10%, white 45%),
-    linear-gradient(135deg, $pal1blue 18%,  transparent 10%),
-    linear-gradient(225deg, $pal1blue 18%, transparent 10%);
-    // linear-gradient(0deg, red 100%, $pal1blue 10%)
+    linear-gradient(135deg, $p1navy 18%,  transparent 10%),
+    linear-gradient(225deg, $p1navy 18%, transparent 10%);
+    // linear-gradient(0deg, red 100%, $p1navy 10%)
   background-size: 70px 170px;
   background-repeat: repeat-x;
 }
 // @mixin saw-tooth-vertical2() {
 //   background-image:
 //     // linear-gradient(0deg, transparent 30%, yellow 95%),
-//     linear-gradient(135deg, $pal1yellow 90%, transparent 90%),
-//     linear-gradient(225deg, $pal1yellow 90%, transparent 90%);
-//     // linear-gradient(0deg, red 100%, $pal1blue 10%)
+//     linear-gradient(135deg, $p1yellow 90%, transparent 90%),
+//     linear-gradient(225deg, $p1yellow 90%, transparent 90%);
+//     // linear-gradient(0deg, red 100%, $p1navy 10%)
 //   background-size: 20px 250px;
 //   background-repeat: no-repeat;
 // }
