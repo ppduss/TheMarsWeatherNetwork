@@ -1,44 +1,41 @@
 import React from 'react';
 import './TopStories.scss';
-// CAROUSEL
+//  CAROUSEL  //
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
-// IMAGES
+//  IMAGES  //
 import manfell from '../../assets/images43/manfell.jpeg';
 import atmosphere from '../../assets/images43/atmosphere.jpeg';
 import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
 import aliens from '../../assets/images43/aliens.jpeg';
-// import impact from '../../assets/images43/impactcrater.jpeg';
-// import marstrue from '../../assets/images43/marstrue.jpeg';
 
 
-// const [dimensions, setDimensions] = useState(window.innerWidth);
+const [dimensions, setDimensions] = useState(window.innerWidth);
 
-// useEffect(() => {
-//   articleHandler = () => {
-//     setDimensions(window.innerWidth);
-//   };
+useEffect(() => {
+  articleHandler = () => {
+    setDimensions(window.innerWidth);
+  };
 
-//   window.addEventListener('resize', handleResize);
+  window.addEventListener('resize', handleResize);
 
-//   return (
-//     console.log(dimensions)
-//   );
-// });
+  return (
+    console.log(dimensions)
+  );
+});
 
 
-const slidesPerPage = () => {
-  if (window.innerWidth < 500) {
-    return (1);
-  } if ((window.innerWidth >= 500) && (window.innerWidth <= 830)) {
-    return (2);
-  } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
-    return (3);
-  } return (4);
-};
-// console.log(window.innerWidth, slidesPerPage());
+// const slidesPerPage = () => {
+//   if (window.innerWidth < 500) {
+//     return (1);
+//   } if ((window.innerWidth >= 500) && (window.innerWidth <= 830)) {
+//     return (2);
+//   } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
+//     return (3);
+//   } return (4);
+// };
 
-const topstories = () => (
+const topstories = (dimensions) => (
   <div>
     <div className="top-stories_header">Top Stories</div>
     <div className="carousel-container">
@@ -46,7 +43,7 @@ const topstories = () => (
         // centered
         dots
         infinite
-        slidesPerPage={slidesPerPage()}
+        slidesPerPage={dimensions}
         offset={0}
       >
 
@@ -73,7 +70,7 @@ const topstories = () => (
         </div>
         <div className="story">
           <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
-            <img src={korolevcrater} alt="Korolev" className="story" />
+            <img src={atmosphere} alt="Korolev" className="story" />
           </a>
           <span className="story_txt_title">The Korolev Crater</span>
           <p className="story_txt">2020's hottest destination !</p>

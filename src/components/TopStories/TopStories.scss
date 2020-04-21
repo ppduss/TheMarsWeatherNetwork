@@ -6,29 +6,29 @@
 
 .top-stories_header {
   // background-color: #103044;
-    background-color:$p1blue;
+    background-color: $p1blue;
     width: 30vw;
 }
 .top-stories_content {
-  // background-color: #bd7dab;
+  background-color: #bd7dab;
   //  background-color: #103044;
   // height: 30vh;
   //  width: 85vw;
 }
 .story {
-  background-color: $marsred;
+  background-color: $p1yellow;
   max-width: 250px;
   margin: 2px;
 }
 .story_txt {
-  color: white;
+  color: black;
   font-size: 0.8em;
   // padding: 4px;
   margin: 5px
 
 }
 .story_txt_title {
-  color: white;
+  color: black;
     // padding: 4px;
       // margin: 5px
 }

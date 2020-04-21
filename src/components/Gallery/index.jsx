@@ -1,5 +1,5 @@
 import React from 'react';
-// import './topstories.scss';
+import '../TopStories/TopStories.scss';
 // CAROUSEL
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';

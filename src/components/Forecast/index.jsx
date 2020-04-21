@@ -19,6 +19,12 @@ const Forecast = () => {
     fetchWeather();
   }, []);
 
+  // const safety = (data) => {
+  //   if (data) {
+  //     return (data);
+  //   } ('N/A');
+  // };
+
   const displayDays = () => {
     if (weatherData) {
       // console.log({ newDate });
@@ -71,10 +77,10 @@ const Forecast = () => {
                 <div>{Math.round(day.HWS.av)} m/s</div>
                 <div>{Math.round(day.HWS.mn)} m/s</div>
                 <div>{Math.round(day.HWS.mx)} m/s</div>
-                {/* <div>{day.WD.most_common.compass_point}</div> */}
+                <div>{day.WD.most_common.compass_point}</div>
               </div>
               <div className="pressure">
-                <div>` ${Math.day.PRE.av ? 'Math.round(day.PRE.av)' : 'N/a'}`</div>
+                <div>{Math.round(day.PRE.av)}</div>
               </div>
             </div>
           </>
