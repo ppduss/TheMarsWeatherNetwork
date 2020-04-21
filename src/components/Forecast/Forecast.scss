@@ -10,60 +10,56 @@
 .sol_container {
   display: flex;
   flex-direction: row;
-  margin: 10px 8px;
-  // max-width: 750px;
+  // margin-top: 8px;
 }
 
 .sol {
-  color: $p1yellow;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 300;
-  background-color: $p1navy;
-  font-size: 1rem;
-  line-height: 30px;
-  text-align: center;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  // padding: 9px;
-  margin: 0px 2px;
+  background-color: $p1navy;
+  font-family: 'Roboto', sans-serif;
+  color: $p1yellow;
+  font-weight: 300;
+  font-size: 0.6rem;
+  line-height: 20px;
+  text-align: center;
+  margin: 0px 1px;
+
   &.bold {
-    font-weight: 500;
+    font-weight: 400;
   }
   .day {
-    // background-color: #355A4A;
-    // margin: 4px 0px
+    background-color: rgba(53, 90, 74, 0.527);
   }
   .temperature {
-    // background-color:#355A4A;
-    // margin: 4px 0px
     div {
-      margin: 10px 12px;
+      margin: 10px 6px;
     }
   }
   .wind {
-    // background-color: #355A4A;
-    // margin: 4px 0px
+    background-color: rgba(53, 90, 74, 0.527);
     div {
-      margin: 10px 12px;
+      margin: 10px 6px;
     }
     .empty-space {
-      height: 2rem;
+      height: 1.3rem;
     }
   }
   .pressure {
-    // background-color: #355A4A;
-    // margin: 4px 0px
     div {
-      margin: 10px 12px;
+      margin: 10px 6px;
     }
   }
 }
-.block {
-  margin: 10px 12px;
+
+@media (min-width: 480px) {
+  .sol {
+    font-size: 1rem;
+    padding: 4px;
+  }
 }
 
-.UVindex_container {
-  width: 300px;
-  height: 173px;
+.block {
+  margin: 10px 12px;
 }

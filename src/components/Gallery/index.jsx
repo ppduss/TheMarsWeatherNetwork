@@ -12,6 +12,16 @@ import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
 import impact from '../../assets/images43/impactcrater.jpeg';
 import marstrue from '../../assets/images43/marstrue.jpeg';
 
+const slidesPerPage = () => {
+  if (window.innerWidth < 480) {
+    return (1);
+  } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
+    return (2);
+  } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
+    return (3);
+  } return (4);
+};
+
 const Gallery = () => (
   <div>
     <div className="top-stories_header">Gallery</div>
@@ -20,7 +30,7 @@ const Gallery = () => (
         // centered
         dots
         infinite
-        slidesPerPage={4}
+        slidesPerPage={slidesPerPage()}
         offset={0}
       >
 

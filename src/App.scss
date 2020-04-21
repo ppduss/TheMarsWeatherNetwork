@@ -1,5 +1,5 @@
 @import './global.scss';
-@import './assets/Footer/mountain.png'
+// @import './assets/Footer/mountain.png';
 
 a:link {
   text-decoration: none;
@@ -33,16 +33,17 @@ text-decoration: none;
 .main-component_wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "theheader theheader"
-    "forecast forecast"
-    " APOD UVindex" 
-    "gallery gallery"
-    "topstories topstories"
-    "footer footer";
+    "theheader"
+    "forecast"
+    "UVindex"
+    "APOD" 
+    "gallery"
+    "topstories"
+    "footer";
   justify-items: center;
-  gap: 0.5%;
+  gap: 1%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 80%, #090A0F 100%);
   // z-index: 0;
   // overflow: hidden;
@@ -58,32 +59,37 @@ text-decoration: none;
     // }
     .title {
     color: $p1black;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     font-family: 'KarbonTest';
-    }
+    @media (min-width: 480px){
+      font-size: 2.4rem;
+    }}
     .sub-title {
     color: $p1black;
-    font-size: 0.7rem;
-    }
+    font-size: 0.5rem;
+    @media (min-width: 480px){
+      font-size: 0.7rem;
+    }}
   }
 
   //COMPONENT CONTAINERS//
   .header_container {
     grid-area: theheader;
+    justify-self: stretch;
     z-index: 3;
   }
   .forecast_container {
     grid-area: forecast;
-    max-width: 700px;
+    justify-self: start;
     background-color: $p1black;
     // border: $p1yellow;
     // border-style: solid;
     // border-width: 1px;
-    // border-radius: 2px;
     z-index: 3;
   }
   .UVindex_container {
     grid-area: UVindex;
+    // justify-self: start;
     z-index: 3;
   }
   .APOD_container {
@@ -93,14 +99,14 @@ text-decoration: none;
   }
   .gallery_container {
     grid-area: gallery;
-    max-width: 95%;
+    background-color: $p1navyFade;
+    max-width: 100%;
     z-index: 3;
   }
   .top-stories_container {
     grid-area: topstories;
-    // width: 500px;
-    background-color: $offwhite;
-    max-width: 95%;
+    background-color: $p1navyFade;
+    max-width: 100%;
     z-index: 3;
   }
   .footer_wrapper {
@@ -117,34 +123,65 @@ text-decoration: none;
   }
 };
 
-@media (min-width: 980px) {
+@media (min-width: 480px) {
   .main-component_wrapper {
-    grid-template-columns: 3% 4fr 0% 3fr 3%;
+    gap: 1.5%;
+  }
+};
+@media (min-width: 768px) {
+  .main-component_wrapper {
+    grid-template-columns: 5% 4fr 3fr 5%;
     grid-template-areas: 
-      ". theheader . . ."
-      ". forecast . APOD ." 
-      ". forecast . UVindex ."
-      ". gallery gallery gallery ."
-      ". topstories topstories topstories ."
-      "footer footer footer footer footer";
-    gap: 0.5%;
+      ". theheader . ."
+      ". forecast APOD ." 
+      ". forecast UVindex ."
+      ". gallery gallery ."
+      ". topstories topstories ."
+      "footer footer footer footer";
+    gap: 1.5%;
+  }
+};
+@media (min-width: 992px) {
+  .main-component_wrapper {
+    grid-template-columns: 5% 4fr 3fr 5%;
+    grid-template-areas: 
+      ". theheader . ."
+      ". forecast APOD ." 
+      ". forecast UVindex ."
+      ". gallery gallery ."
+      ". topstories topstories ."
+      "footer footer footer footer";
+    gap: 1.5%;
+  }
+};
+@media (min-width: 1200px) {
+  .main-component_wrapper {
+    grid-template-columns: 12% 4fr 3fr 12%;
+    grid-template-areas: 
+      ". theheader . ."
+      ". forecast UVindex ." 
+      ". forecast APOD ."
+      ". gallery gallery ."
+      ". topstories topstories ."
+      "footer footer footer footer";
+    gap: 2%;
 
   }
-}
-@media (min-width: 1600px) {
+};
+@media (min-width: 2000px) {
   .main-component_wrapper {
-    grid-template-columns: 12% 4fr 1% 3fr 12%;
+    grid-template-columns: 18% 4fr 3fr 18%;
     grid-template-areas: 
-      ". theheader . . ."
-      ". forecast . UVindex ." 
-      ". forecast . APOD ."
-      ". gallery gallery gallery ."
-      ". topstories topstories topstories ."
-      "footer footer footer footer footer";
-    gap: 1%;
+      ". theheader . ."
+      ". forecast UVindex ." 
+      ". forecast APOD ."
+      ". gallery gallery ."
+      ". topstories topstories ."
+      "footer footer footer footer";
+    gap: 2%;
 
   }
-}
+};
 
 
 // n is number of stars required
@@ -223,19 +260,20 @@ $shadows-big:    multiple-box-shadow(100);
   to {
     transform: translateY(-2000px);
   }
-}
+};
   
 //////FOOTER//////
 // transparent 60%
-@mixin saw-tooth-vertical() {
-  background-image:
-    // linear-gradient(0deg, transparent 10%, white 45%),
-    linear-gradient(135deg, $p1navy 18%,  transparent 10%),
-    linear-gradient(225deg, $p1navy 18%, transparent 10%);
-    // linear-gradient(0deg, red 100%, $p1navy 10%)
-  background-size: 70px 170px;
-  background-repeat: repeat-x;
-}
+// ....
+// @mixin saw-tooth-vertical() {
+//   background-image:
+//     // linear-gradient(0deg, transparent 10%, white 45%),
+//     linear-gradient(135deg, $p1navy 18%,  transparent 10%),
+//     linear-gradient(225deg, $p1navy 18%, transparent 10%);
+//     // linear-gradient(0deg, red 100%, $p1navy 10%)
+//   background-size: 70px 170px;
+//   background-repeat: repeat-x;
+// }....
 // @mixin saw-tooth-vertical2() {
 //   background-image:
 //     // linear-gradient(0deg, transparent 30%, yellow 95%),
@@ -245,11 +283,13 @@ $shadows-big:    multiple-box-shadow(100);
 //   background-size: 20px 250px;
 //   background-repeat: no-repeat;
 // }
-.banner-vertical {
-  height: 170px;
-  background-color: black;
+// ....
+// .banner-vertical {
+//   height: 170px;
+//   background-color: black;
+//   ....
   // background-image: linear-gradient(transparent, rgb(165, 45, 45));
   
   // @include saw-tooth-vertical();
   // @include saw-tooth-vertical2();
-}
+// };

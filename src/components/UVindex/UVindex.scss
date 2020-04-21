@@ -4,10 +4,10 @@
   font-family: 'Lato', sans-serif;
   width: 300px;
   border-style: solid;
-  border-color: whitesmoke;
-  background-color: #B74128;
-  border-width: 7px;
-  border-radius: 2px;
+  border-color: $p1blue;
+  background-color: $p1yellow;
+  border-width: 5px;
+  border-radius: 1px;
 }
 .UVlevels {
 display: flex;
@@ -15,7 +15,7 @@ flex-wrap: wrap;
 font-size: 0.6rem;
 }
 .UVtitle {
-  color: white;
+  // color: $p1navy;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +46,7 @@ font-size: 0.6rem;
 
 .extreme {
   font-family: 'Roboto', sans-serif;
-  color: white;
+  // color: $p1navy;
   font-weight: 400;
   display: flex;
   align-items: center;

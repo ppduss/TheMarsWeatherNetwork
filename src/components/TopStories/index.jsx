@@ -10,32 +10,36 @@ import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
 import aliens from '../../assets/images43/aliens.jpeg';
 
 
-const [dimensions, setDimensions] = useState(window.innerWidth);
+// const [dimensions, setDimensions] = useState(window.innerWidth);
 
-useEffect(() => {
-  articleHandler = () => {
-    setDimensions(window.innerWidth);
-  };
+// useEffect(() => {
+//   articleHandler = () => {
+//     setDimensions(window.innerWidth);
+//   };
 
-  window.addEventListener('resize', handleResize);
+//   window.addEventListener('resize', handleResize())
+//   });
+//   handleResize = () => {
 
-  return (
-    console.log(dimensions)
-  );
-});
+//   }
+
+//   return (
+//     console.log(dimensions)
+//   );
+// });
 
 
 // const slidesPerPage = () => {
-//   if (window.innerWidth < 500) {
+//   if (window.innerWidth < 480) {
 //     return (1);
-//   } if ((window.innerWidth >= 500) && (window.innerWidth <= 830)) {
+//   } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
 //     return (2);
 //   } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
 //     return (3);
 //   } return (4);
 // };
 
-const topstories = (dimensions) => (
+const topstories = () => (
   <div>
     <div className="top-stories_header">Top Stories</div>
     <div className="carousel-container">
@@ -43,7 +47,7 @@ const topstories = (dimensions) => (
         // centered
         dots
         infinite
-        slidesPerPage={dimensions}
+        slidesPerPage={1}
         offset={0}
       >
 
