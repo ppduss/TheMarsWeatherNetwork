@@ -15,11 +15,13 @@ import marstrue from '../../assets/images43/marstrue.jpeg';
 const slidesPerPage = () => {
   if (window.innerWidth < 480) {
     return (1);
-  } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
+  } if ((window.innerWidth >= 992) && (window.innerWidth <= 1200)) {
     return (2);
-  } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
+  } if ((window.innerWidth > 1200) && (window.innerWidth <= 1600)) {
     return (3);
-  } return (4);
+  } if ((window.innerWidth > 1600) && (window.innerWidth <= 9000)) {
+    return (4);
+  }
 };
 
 const Gallery = () => (

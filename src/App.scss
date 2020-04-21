@@ -33,15 +33,14 @@ text-decoration: none;
 .main-component_wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: 1fr;
-  grid-template-areas:
-    "theheader"
-    "forecast"
-    "UVindex"
-    "APOD" 
-    "gallery"
-    "topstories"
-    "footer";
+ grid-template-columns: 5% 4fr 3fr 5%;
+    grid-template-areas: 
+      ". theheader . ."
+      ". forecast APOD ." 
+      ". forecast UVindex ."
+      ". gallery gallery ."
+      ". topstories topstories ."
+      "footer footer footer footer";
   justify-items: center;
   gap: 1%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 80%, #090A0F 100%);
@@ -50,7 +49,7 @@ text-decoration: none;
 
   .main-component_header {
     font-size: calc(0.9rem);
-    align-items: center;
+    // align-items: center;
     justify-content: left;
     background-color: $p1yellow;
     padding: 12px ;
