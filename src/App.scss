@@ -32,15 +32,16 @@ text-decoration: none;
 
 .main-component_wrapper {
   display: grid;
-  width: 100%;
- grid-template-columns: 5% 4fr 3fr 5%;
-    grid-template-areas: 
+  width: 115%;
+  grid-template-columns: 0% 4fr 0fr 0%;
+  grid-template-areas: 
       ". theheader . ."
-      ". forecast APOD ." 
-      ". forecast UVindex ."
+      ". forecast forecast ." 
+      ". APOD . ."
+      ". UVindex . ."
       ". gallery gallery ."
-      ". topstories topstories ."
-      "footer footer footer footer";
+      ". topstories topstories .";
+      // "footer footer footer footer";
   justify-items: center;
   gap: 1%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 80%, #090A0F 100%);
@@ -109,16 +110,24 @@ text-decoration: none;
     z-index: 3;
   }
   .footer_wrapper {
-  grid-area: footer;
-  // height: 200px; 
-  // width: 100%;
-  z-index: 0;
-  // @include saw-tooth-vertical();
-  // background-color: red;
-  background-image: url(./assets/Footer/mountain.png);
-  background-size: 1000px 200px;
-  background-repeat: repeat-x;
-  // background: url(./assets/Footer/mountain.png);
+    // border: solid blue 5px;
+    grid-area: footer;
+    height: 540px; 
+    width: 100%;
+    z-index: 0;
+    // align-items: end;
+    // justify-content: stretch;
+    // background: url(./assets/Footer/forest-transparent.png);
+    background-image: url(./assets/Footer/mountain.png);
+    background-size: auto;
+    background-position: bottom left;
+    background-repeat: repeat-x;
+    // .footer {
+    //   background-color: transparent;
+    //   height: 100%;
+    //   width: 100%;
+      
+    // }
   }
 };
 
@@ -164,7 +173,6 @@ text-decoration: none;
       ". topstories topstories ."
       "footer footer footer footer";
     gap: 2%;
-
   }
 };
 @media (min-width: 2000px) {
@@ -178,12 +186,10 @@ text-decoration: none;
       ". topstories topstories ."
       "footer footer footer footer";
     gap: 2%;
-
   }
 };
 
-
-// n is number of stars required
+// * STARS * //
 @function multiple-box-shadow ($n) {
   $value: '#{random(2000)}px #{random(2000)}px #fff';
   @for $i from 2 through $n {
@@ -195,8 +201,6 @@ text-decoration: none;
 $shadows-small:  multiple-box-shadow(700);
 $shadows-medium: multiple-box-shadow(200);
 $shadows-big:    multiple-box-shadow(100);
-
-
 
 #stars {
   width: 1px;
@@ -215,7 +219,6 @@ $shadows-big:    multiple-box-shadow(100);
     box-shadow: $shadows-small;
   }
 }
-
 #stars2 {
   width: 1px;
   height: 1px;
@@ -233,7 +236,6 @@ $shadows-big:    multiple-box-shadow(100);
     box-shadow: $shadows-medium;
   }
 }
-
 #stars3 {
   width: 2px;
   height: 2px;
@@ -251,7 +253,6 @@ $shadows-big:    multiple-box-shadow(100);
     box-shadow: $shadows-big;
   }
 }
-
 @keyframes animStar {
   from {
     transform: translateY(0px);
@@ -261,34 +262,3 @@ $shadows-big:    multiple-box-shadow(100);
   }
 };
   
-//////FOOTER//////
-// transparent 60%
-// ....
-// @mixin saw-tooth-vertical() {
-//   background-image:
-//     // linear-gradient(0deg, transparent 10%, white 45%),
-//     linear-gradient(135deg, $p1navy 18%,  transparent 10%),
-//     linear-gradient(225deg, $p1navy 18%, transparent 10%);
-//     // linear-gradient(0deg, red 100%, $p1navy 10%)
-//   background-size: 70px 170px;
-//   background-repeat: repeat-x;
-// }....
-// @mixin saw-tooth-vertical2() {
-//   background-image:
-//     // linear-gradient(0deg, transparent 30%, yellow 95%),
-//     linear-gradient(135deg, $p1yellow 90%, transparent 90%),
-//     linear-gradient(225deg, $p1yellow 90%, transparent 90%);
-//     // linear-gradient(0deg, red 100%, $p1navy 10%)
-//   background-size: 20px 250px;
-//   background-repeat: no-repeat;
-// }
-// ....
-// .banner-vertical {
-//   height: 170px;
-//   background-color: black;
-//   ....
-  // background-image: linear-gradient(transparent, rgb(165, 45, 45));
-  
-  // @include saw-tooth-vertical();
-  // @include saw-tooth-vertical2();
-// };

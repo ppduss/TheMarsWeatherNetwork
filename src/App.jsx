@@ -8,7 +8,7 @@ import UVindex from './components/UVindex/index';
 import APOD from './components/APOD/index';
 // IMAGES
 import Marsgif from './assets/Mars.gif';
-import skylinetrees from './assets/Footer/mountain.png';
+import skylinetrees from './assets/Footer/forest-transparent.png';
 
 function App() {
   const Maincomponent = () => (
@@ -42,9 +42,8 @@ function App() {
           <Gallery />
         </div>
         <div className="footer_wrapper">
-          <img src={skylinetrees} alt="oups" />
-          <div>test</div>
-          {/* <div className="banner-vertical" /> */}
+          {/* <img className="footer" src={skylinetrees} alt="oups" /> */}
+          {/* <div /> */}
         </div>
 
 

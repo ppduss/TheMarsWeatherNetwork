@@ -74,13 +74,13 @@ const Forecast = () => {
               </div>
               <div className="wind">
                 <div className="empty-space" />
-                {/* <div>{Math.round(day.HWS.av)} m/s</div> */}
-                {/* <div>{Math.round(day.HWS.mn)} m/s</div>
-                <div>{Math.round(day.HWS.mx)} m/s</div> */}
-                {/* <div>{day.WD.most_common.compass_point}</div> */}
+                <div>{Math.round(day.HWS.av)} m/s</div>
+                <div>{Math.round(day.HWS.mn)} m/s</div>
+                <div>{Math.round(day.HWS.mx)} m/s</div>
+                <div>{day.WD.most_common.compass_point}</div>
               </div>
               <div className="pressure">
-                {/* <div>{Math.round(day.PRE.av)}</div> */}
+                <div>{Math.round(day.PRE.av)}</div>
               </div>
             </div>
           </>
