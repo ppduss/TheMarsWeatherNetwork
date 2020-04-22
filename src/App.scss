@@ -32,7 +32,7 @@ text-decoration: none;
 
 .main-component_wrapper {
   display: grid;
-  width: 115%;
+  width: 100%;
   grid-template-columns: 0% 4fr 0fr 0%;
   grid-template-areas: 
       ". theheader . ."
@@ -82,9 +82,7 @@ text-decoration: none;
     grid-area: forecast;
     justify-self: start;
     background-color: $p1black;
-    // border: $p1yellow;
-    // border-style: solid;
-    // border-width: 1px;
+    border: $p1yellow solid 1px;
     z-index: 3;
   }
   .UVindex_container {
@@ -133,20 +131,28 @@ text-decoration: none;
 
 @media (min-width: 480px) {
   .main-component_wrapper {
-    gap: 1.5%;
+    // gap: 1.5%;
   }
 };
 @media (min-width: 768px) {
   .main-component_wrapper {
-    grid-template-columns: 5% 4fr 3fr 5%;
+    // width: 100%;
+    grid-template-columns: 1% 4fr 2fr 1fr 1%;
     grid-template-areas: 
-      ". theheader . ."
-      ". forecast APOD ." 
-      ". forecast UVindex ."
-      ". gallery gallery ."
-      ". topstories topstories ."
-      "footer footer footer footer";
+      ". theheader theheader . ."
+      ". forecast forecast . ." 
+      ". APOD UVindex UVindex ."
+      ". gallery gallery gallery ."
+      ". topstories topstories topstories ."
+      "footer footer footer footer footer";
     gap: 1.5%;
+    .APOD_container {
+      width: 90%;
+    }
+    .UVindex_container {
+      align-self: center;
+      justify-self: start;
+    }
   }
 };
 @media (min-width: 992px) {
@@ -160,6 +166,9 @@ text-decoration: none;
       ". topstories topstories ."
       "footer footer footer footer";
     gap: 1.5%;
+    .UVindex_container {
+      justify-self: center;
+    }
   }
 };
 @media (min-width: 1200px) {
@@ -167,8 +176,8 @@ text-decoration: none;
     grid-template-columns: 12% 4fr 3fr 12%;
     grid-template-areas: 
       ". theheader . ."
-      ". forecast UVindex ." 
-      ". forecast APOD ."
+      ". forecast APOD ." 
+      ". forecast UVindex ."
       ". gallery gallery ."
       ". topstories topstories ."
       "footer footer footer footer";
@@ -180,8 +189,8 @@ text-decoration: none;
     grid-template-columns: 18% 4fr 3fr 18%;
     grid-template-areas: 
       ". theheader . ."
-      ". forecast UVindex ." 
-      ". forecast APOD ."
+      ". forecast APOD ." 
+      ". forecast UVindex ."
       ". gallery gallery ."
       ". topstories topstories ."
       "footer footer footer footer";
