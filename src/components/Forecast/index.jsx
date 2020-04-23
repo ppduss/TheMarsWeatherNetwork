@@ -58,6 +58,11 @@ const Forecast = () => {
             return ('Dec');
           }
         };
+        const safety = (properties) => {
+          if (!properties) {
+            return ('N/A');
+          } return (Math.round(properties));
+        };
         return (
           <>
             <div className="sol">
@@ -68,20 +73,19 @@ const Forecast = () => {
                 <div>Sol {sol}</div>
               </div>
               <div className="temperature">
-                <div>{Math.round(day.AT.av)}°C</div>
-                <div>{Math.round(day.AT.mx)}°C</div>
-                <div>{Math.round(day.AT.mn)}°C</div>
+                <div>{safety(day.AT.av)}°C</div>
+                <div>{safety(day.AT.mx)}°C</div>
+                <div>{safety(day.AT.mn)}°C</div>
               </div>
               <div className="wind">
                 <div className="empty-space" />
-                <div>{} m/s</div>
-                {/* <div>{Math.round(day.HWS.av)} m/s</div> */}
-                {/* <div>{Math.round(day.HWS.mn)} m/s</div>
-                <div>{Math.round(day.HWS.mx)} m/s</div>
-                <div>{day.WD.most_common.compass_point}</div> */}
+                <div>{safety(day.HWS.av)} m/s</div>
+                <div>{safety(day.HWS.mn)} m/s</div>
+                <div>{safety(day.HWS.mx)} m/s</div>
+                <div>{day.WD.most_common.compass_point}</div>
               </div>
               <div className="pressure">
-                {/* <div>{Math.round(day.PRE.av)}</div> */}
+                <div>{safety(day.PRE.av)}</div>
               </div>
             </div>
           </>

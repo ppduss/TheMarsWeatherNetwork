@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './TopStories.scss';
 //  CAROUSEL  //
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
@@ -13,33 +13,42 @@ import aliens from '../../assets/images43/aliens.jpeg';
 // const [dimensions, setDimensions] = useState(window.innerWidth);
 
 // useEffect(() => {
-//   articleHandler = () => {
-//     setDimensions(window.innerWidth);
-//   };
-
+//   // articleHandler = () => {
+//   //   setDimensions(window.innerWidth)};
 //   window.addEventListener('resize', handleResize())
 //   });
 //   handleResize = () => {
-
 //   }
-
 //   return (
 //     console.log(dimensions)
 //   );
-// });
-
-
-// const slidesPerPage = () => {
-//   if (window.innerWidth < 480) {
-//     return (1);
-//   } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
-//     return (2);
-//   } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
-//     return (3);
-//   } return (4);
 // };
 
+const slidesPerPage = () => {
+  // if (window.innerWidth < 480) {
+  //   return (1);
+  // } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
+  //   return (2);
+  // } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
+  //   return (3);
+  // } return (4);
+};
+
+  const [slides, setSlides] = useState(1);
 const topstories = () => (
+
+useEffect(() => {
+  if (window.innerWidth < 480) {
+    setSlides(1);
+  } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
+    setSlides(2);
+  } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
+    setSlides(3);
+  } setSlides(4);
+}, []);
+
+// console.log(slides);
+
   <div>
     <div className="top-stories_header">Top Stories</div>
     <div className="carousel-container">
