@@ -46,7 +46,7 @@ text-decoration: none;
   gap: 1%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 80%, #090A0F 100%);
   // z-index: 0;
-  // overflow: hidden;
+  overflow: hidden;
 
   .main-component_header {
     font-size: calc(0.9rem);
@@ -109,6 +109,7 @@ text-decoration: none;
     grid-area: topstories;
     background-color: $p1navyFade;
     max-width: 100%;
+    margin-top: 10%;
     z-index: 3;
   }
   .footer_wrapper {

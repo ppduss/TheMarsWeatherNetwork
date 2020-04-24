@@ -13,7 +13,6 @@ import skylinetrees from './assets/Footer/forest-transparent.png';
 function App() {
   const Maincomponent = () => (
     <div className="">
-
       <div className="main-component_wrapper">
         <div id="stars" />
         <div id="stars2" />

@@ -9,7 +9,6 @@ import atmosphere from '../../assets/images43/atmosphere.jpeg';
 import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
 import aliens from '../../assets/images43/aliens.jpeg';
 
-
 // const [dimensions, setDimensions] = useState(window.innerWidth);
 // useEffect(() => {
 //   // articleHandler = () => {
@@ -22,31 +21,26 @@ import aliens from '../../assets/images43/aliens.jpeg';
 //     console.log(dimensions)
 //   );
 // };
-// const slidesPerPage = () => {
-//   // if (window.innerWidth < 480) {
-//   //   return (1);
-//   // } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
-//   //   return (2);
-//   // } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
-//   //   return (3);
-//   // } return (4);
-// };
+//
 
-const topstories = () =>
-// const [slides, setSlides] = useState(1);
+const Topstories = () => {
+  const [slides, setSlides] = useState(0);
 
-// useEffect(() => {
-//   if (window.innerWidth < 480) {
-//     setSlides(1);
-//   } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
-//     setSlides(2);
-//   } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
-//     setSlides(3);
-//   } setSlides(4);
-// }, []);
+  useEffect(() => {
+    const slidesPerPage = () => {
+      if (window.innerWidth < 480) {
+        return (setSlides(1));
+      } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
+        return (setSlides(2));
+      } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
+        return (setSlides(3));
+      } return (setSlides(4));
+    };
+    slidesPerPage();
+  }, []);
 
-  // console.log(slides);
-  (
+
+  return (
     <div>
       <div className="top-stories_header">Top Stories</div>
       <div className="carousel-container">
@@ -54,7 +48,7 @@ const topstories = () =>
           // centered
           dots
           infinite
-          slidesPerPage={3}
+          slidesPerPage={slides}
           offset={0}
         >
           <div className="story">
@@ -89,4 +83,5 @@ const topstories = () =>
       </div>
     </div>
   );
-export default topstories;
+};
+export default Topstories;

@@ -7,7 +7,7 @@ const APOD = () => {
   const [pictureTitle, setPictureTitle] = useState(undefined);
   const [description, setDescription] = useState(undefined);
 
-  const fetchPicture = () => {
+  const fetchApod = () => {
     axios.get('https://api.nasa.gov/planetary/apod?api_key=Bh0T6mIkmv2KnW5FW28FYSR16frmXn4sy4Upy4ji')
       .then((response) => {
         setPictureOfTheDay(response.data.url);
@@ -20,14 +20,14 @@ const APOD = () => {
       });
   };
   useEffect(() => {
-    fetchPicture();
+    fetchApod();
   }, []);
 
   return (
     <div className="APOD_main">
       <div className="title">Astronomy Picture of the Day</div>
       <a href="https://apod.nasa.gov/apod/astropix.html">
-        <img className="photograph" src={pictureOfTheDay} alt="Astronomy Picture of the Day" />
+        <iframe title="APOD" className="photograph" src={pictureOfTheDay} alt="NASA APOD" />
         <div className="bottom_text">{pictureTitle}</div>
         <div className="description">{description}...(continued)</div>
       </a>

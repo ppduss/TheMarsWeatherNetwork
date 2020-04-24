@@ -49,8 +49,6 @@ const Gallery = () => (
 
       </Carousel>
     </div>
-    <div className="top-stories_content" />
-
   </div>
 );
 export default Gallery;
