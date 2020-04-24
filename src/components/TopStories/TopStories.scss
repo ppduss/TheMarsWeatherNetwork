@@ -6,29 +6,31 @@
 
 .top-stories_header {
   // background-color: #103044;
-    background-color: $p1blue;
-    width: 30vw;
-}
-.top-stories_content {
-  // background-color: #bd7dab;
-  //  background-color: #103044;
-  // height: 30vh;
-  //  width: 85vw;
+  font-family: inherit;
+    background-color: $p1yellow;
+    width: 20%;
+    padding: 5px;
+    margin-bottom: 6px;
 }
 .story {
-  background-color: $p1yellow;
-  max-width: 250px;
-  margin: 2px;
+  background-color: $p1black;
+  max-width: 262px;
+  min-height: 275px;
+  margin: 4px;
+  img {
+    width: 250px;
+    margin: 6px;
+    // padding: 4px;
+  }
 }
 .story_txt {
-  color: black;
-  font-size: 0.8em;
-  // padding: 4px;
-  margin: 5px
+  color: whitesmoke;
+  font-size: 0.8rem;
+  margin: 6px
 
 }
 .story_txt_title {
-  color: black;
-    // padding: 4px;
-      // margin: 5px
+  color: $p1yellow;
+  margin: 6px;
+  font-size: 0.9rem;
 }

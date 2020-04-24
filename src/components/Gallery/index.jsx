@@ -20,7 +20,7 @@ const slidesPerPage = () => {
   } if ((window.innerWidth > 1200) && (window.innerWidth <= 1600)) {
     return (3);
   } if ((window.innerWidth > 1600) && (window.innerWidth <= 9000)) {
-    return (4);
+    return (3);
   }
 };
 
@@ -30,6 +30,9 @@ const Gallery = () => (
     <div>
       <Carousel
         // centered
+        autoPlay={5000}
+        animationSpeed={2000}
+        // arrows
         dots
         infinite
         slidesPerPage={slidesPerPage()}

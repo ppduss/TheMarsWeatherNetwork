@@ -13,10 +13,16 @@ import skylinetrees from './assets/Footer/forest-transparent.png';
 function App() {
   const Maincomponent = () => (
     <div className="">
+
       <div className="main-component_wrapper">
         <div id="stars" />
         <div id="stars2" />
         <div id="stars3" />
+        <div className="night">
+          <div className="shooting_star" />
+          <div className="shooting_star" />
+          <div className="shooting_star" />
+        </div>
         <div className="header_container">
           <header className="main-component_header">
             {/* <img className="mars-gif" alt="marsgif" src={Marsgif} /> */}
