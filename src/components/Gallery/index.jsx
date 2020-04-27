@@ -12,17 +12,6 @@ import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
 import impact from '../../assets/images43/impactcrater.jpeg';
 import marstrue from '../../assets/images43/marstrue.jpeg';
 
-const slidesPerPage = () => {
-  if (window.innerWidth < 480) {
-    return (1);
-  } if ((window.innerWidth >= 992) && (window.innerWidth <= 1200)) {
-    return (2);
-  } if ((window.innerWidth > 1200) && (window.innerWidth <= 1600)) {
-    return (3);
-  } if ((window.innerWidth > 1600) && (window.innerWidth <= 9000)) {
-    return (3);
-  }
-};
 
 const Gallery = () => (
   <div>
@@ -30,15 +19,37 @@ const Gallery = () => (
     <div>
       <Carousel
         // centered
-        autoPlay={5000}
-        animationSpeed={2000}
+        autoPlay={5500}
+        animationSpeed={1500}
         // arrows
         dots
         infinite
-        slidesPerPage={slidesPerPage()}
+        slidesPerPage={1}
+        breakpoints={{
+          400: {
+            slidesPerPage: 1,
+          },
+          600: {
+            slidesPerPage: 1.5,
+          },
+          800: {
+            slidesPerPage: 2,
+          },
+          1000: {
+            slidesPerPage: 2.5,
+          },
+          1200: {
+            slidesPerPage: 3,
+          },
+          1600: {
+            slidesPerPage: 3,
+          },
+          2000: {
+            slidesPerPage: 3.5,
+          },
+        }}
         offset={0}
       >
-
         <img src={marstrue} alt="true" width={300} />
         <img src={impact} alt="impact" width={300} />
         <img src={atmosphere} alt="atmosphere" width={300} />
@@ -46,7 +57,6 @@ const Gallery = () => (
         <img src={marstrue} alt="true" width={300} />
         <img src={impact} alt="impact" width={300} />
         <img src={atmosphere} alt="atmosphere" width={300} />
-
       </Carousel>
     </div>
   </div>

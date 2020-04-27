@@ -23,65 +23,70 @@ import aliens from '../../assets/images43/aliens.jpeg';
 // };
 //
 
-const Topstories = () => {
-  const [slides, setSlides] = useState(0);
-
-  useEffect(() => {
-    const slidesPerPage = () => {
-      if (window.innerWidth < 480) {
-        return (setSlides(1));
-      } if ((window.innerWidth >= 768) && (window.innerWidth <= 830)) {
-        return (setSlides(2));
-      } if ((window.innerWidth > 830) && (window.innerWidth <= 1150)) {
-        return (setSlides(3));
-      } return (setSlides(4));
-    };
-    slidesPerPage();
-  }, []);
-
-
-  return (
-    <div>
-      <div className="top-stories_header">Top Stories</div>
-      <div className="carousel-container">
-        <Carousel
+const Topstories = () => (
+  <div>
+    <div className="top-stories_header">Top Stories</div>
+    <div className="carousel-container">
+      <Carousel
           // centered
-          dots
-          infinite
-          slidesPerPage={slides}
-          offset={0}
+        dots
+        infinite
+        slidesPerPage={1}
+        breakpoints={{
+          400: {
+            slidesPerPage: 1,
+          },
+          600: {
+            slidesPerPage: 1.5,
+          },
+          800: {
+            slidesPerPage: 2,
+          },
+          1000: {
+            slidesPerPage: 2.5,
+          },
+          1200: {
+            slidesPerPage: 3,
+          },
+          1600: {
+            slidesPerPage: 3,
+          },
+          2000: {
+            slidesPerPage: 3.5,
+          },
+        }}
+        offset={0}
         >
-          <div className="story">
-            <a href="https://en.uncyclopedia.co/wiki/Ancient_Aliens">
-              <img src={aliens} alt="Is there life on Mars ?" />
-            </a>
-            <span className="story_txt_title">What&apos;s on Mars ?</span>
-            <p className="story_txt">You’ll never guess his shocking answer !</p>
-          </div>
-          <div className="story">
-            <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
-              <img src={manfell} alt="Is the Starman in space ?" />
-            </a>
-            <span className="story_txt_title">David Bowie dead ?</span>
-            <p className="story_txt">Or did the “man who fell to earth” return home ?</p>
-          </div>
-          <div className="story">
-            <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
-              <img src={korolevcrater} alt="Korolev" />
-            </a>
-            <span className="story_txt_title">The Korolev Crater</span>
-            <p className="story_txt">2020&apos;s hottest destination !</p>
-          </div>
-          <div className="story">
-            <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
-              <img src={atmosphere} alt="Korolev" />
-            </a>
-            <span className="story_txt_title">The Korolev Crater</span>
-            <p className="story_txt">2020&apos;s hottest destination !</p>
-          </div>
-        </Carousel>
-      </div>
+        <div className="story">
+          <a href="https://en.uncyclopedia.co/wiki/Ancient_Aliens">
+            <img src={aliens} alt="Is there life on Mars ?" />
+          </a>
+          <span className="story_txt_title">What&apos;s on Mars ?</span>
+          <p className="story_txt">You’ll never guess his shocking answer !</p>
+        </div>
+        <div className="story">
+          <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
+            <img src={manfell} alt="Is the Starman in space ?" />
+          </a>
+          <span className="story_txt_title">David Bowie dead ?</span>
+          <p className="story_txt">Or did the “man who fell to earth” return home ?</p>
+        </div>
+        <div className="story">
+          <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
+            <img src={korolevcrater} alt="Korolev" />
+          </a>
+          <span className="story_txt_title">The Korolev Crater</span>
+          <p className="story_txt">2020&apos;s hottest destination !</p>
+        </div>
+        <div className="story">
+          <a href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
+            <img src={atmosphere} alt="Korolev" />
+          </a>
+          <span className="story_txt_title">The Korolev Crater</span>
+          <p className="story_txt">2020&apos;s hottest destination !</p>
+        </div>
+      </Carousel>
     </div>
-  );
-};
+  </div>
+);
 export default Topstories;

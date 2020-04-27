@@ -26,11 +26,7 @@ const Forecast = () => {
       const solKeysArray = weatherData.sol_keys;
       const output = solKeysArray.map((sol) => {
         const day = weatherData[sol];
-        // const safety = (thing) => {
-        //   if (thing = null) {
-        //     return ('n/a');
-        //   } return (thing);
-        // };
+
         const generateDate = () => {
           if (day.First_UTC.slice(5, 7) === '01') {
             return ('Jan');
@@ -58,10 +54,10 @@ const Forecast = () => {
             return ('Dec');
           }
         };
-        const safety = (properties) => {
-          if (!properties) {
+        const safety = (stuff) => {
+          if (stuff == null) {
             return ('N/A');
-          } return (Math.round(properties));
+          } return (Math.round(stuff));
         };
         return (
           <>
@@ -79,13 +75,13 @@ const Forecast = () => {
               </div>
               <div className="wind">
                 <div className="empty-space" />
-                <div>{safety(day.HWS.av)} m/s</div>
+                {/* <div>{safety(day.HWS.av)} m/s</div>
                 <div>{safety(day.HWS.mn)} m/s</div>
-                <div>{safety(day.HWS.mx)} m/s</div>
-                <div>{day.WD.most_common.compass_point}</div>
+                <div>{safety(day.HWS.mx)} m/s</div> */}
+                {/* <div>{day.WD.most_common.compass_point}</div> */}
               </div>
               <div className="pressure">
-                <div>{safety(day.PRE.av)}</div>
+                {/* <div>{safety(day.PRE.av)}</div> */}
               </div>
             </div>
           </>
