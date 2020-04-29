@@ -35,9 +35,9 @@ const Topstories = () => (
     <div className="top-stories_header">Top Stories</div>
     <div className="carousel-container">
       <Carousel
-          // centered
         dots
         infinite
+        keepDirectionWhenDragging
         slidesPerPage={1}
         breakpoints={{
           400: {
@@ -68,78 +68,78 @@ const Topstories = () => (
           <a target="_blank" rel="noopener noreferrer" href="https://en.uncyclopedia.co/wiki/Ancient_Aliens">
             <img src={aliens} alt="life on Mars ?" />
           </a>
-          <span className="story_txt_title">What&apos;s beneath Mars&apos; icy surface ?</span>
-          <p className="story_txt">You’ll never guess this expert&apos;s shocking answer !</p>
+          <div className="story_txt_title">What&apos;s beneath Mars&apos; icy surface ?</div>
+          <div className="story_txt">You’ll never guess this expert&apos;s shocking answer !</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
             <img src={manfell} alt="Is the Starman in space ?" />
           </a>
-          <span className="story_txt_title">Is David Bowie really dead ?</span>
-          <p className="story_txt">Or did the &ldquo;man who fell to earth&ldquo; simply return home ?</p>
+          <div className="story_txt_title">Is David Bowie really dead ?</div>
+          <div className="story_txt">Or did the &ldquo;man who fell to earth&ldquo; simply return home ?</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.npr.org/2018/12/21/679155506/huge-martian-crater-korolev-appears-topped-with-miles-of-pristine-snow">
             <img src={korolevcrater} alt="Korolev" />
           </a>
-          <span className="story_txt_title">This year&apos;s hottest ski destination ?</span>
-          <p className="story_txt">Why this is the year the Korolev crater is destined to shine.</p>
+          <div className="story_txt_title">This year&apos;s hottest ski destination ?</div>
+          <div className="story_txt">Why this is the year the Korolev crater is destined to shine.</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.marscitydesign.com/mojave-desert">
             <img src={suburb} alt="suburb" />
           </a>
-          <span className="story_txt_title">Urban Planner can&apos;t wait to turn Mars into suburban sprawl.</span>
-          <p className="story_txt">&ldquo;It&apos;s gonna be lit.&ldquo;</p>
+          <div className="story_txt_title">Urban Planner can&apos;t wait to turn Mars into suburban sprawl.</div>
+          <div className="story_txt">&ldquo;It&apos;s gonna be lit.&ldquo;</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Erg_(landform)">
             <img src={atmosphere} alt="Sandy" />
           </a>
-          <span className="story_txt_title">How sandy is the Red Planet ?</span>
-          <p className="story_txt">NASA experts finally open up about the issue: &ldquo;Erg, it&apos;s pretty sandy&ldquo;.</p>
+          <div className="story_txt_title">How sandy is the Red Planet ?</div>
+          <div className="story_txt">NASA experts finally open up about the issue: &ldquo;It&apos;s pretty sandy&ldquo;.</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.spacex.com/mars">
             <img src={thicc} alt="thicc" />
           </a>
-          <span className="story_txt_title">Space X Mars Mission Update</span>
-          <p className="story_txt">Elon announces exciting new Titanium Hull Interplanetary & Cosmic Craft (THICC) rocket.</p>
+          <div className="story_txt_title">Space X Mars Mission Update</div>
+          <div className="story_txt">Elon announces exciting new Titanium Hull Interplanetary & Cosmic Craft (THICC) rocket.</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Philip_K._Dick">
             <img src={pkdbooks} alt="android rights" />
           </a>
-          <span className="story_txt_title">Android rights expert: &ldquo;Philip K Dick was robophobic&ldquo;</span>
-          <p className="story_txt">&ldquo; And what&apos;s the deal with the whole sheep thing ?&ldquo;</p>
+          <div className="story_txt_title">Android rights expert: &ldquo;Philip K. Dick was robophobic&ldquo;</div>
+          <div className="story_txt">&ldquo;And what&apos;s the deal with the whole sheep thing ?&ldquo;</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="http://www.the13thfloor.tv/2016/04/12/i-feel-fantastic-the-horrifying-history-of-tara-the-android/">
             <img src={atmosphere} alt="android" />
           </a>
-          <span className="story_txt_title">Android Awareness Month</span>
-          <p className="story_txt">Debunking the top 10 myths about our mechanical bretheren.</p>
+          <div className="story_txt_title">Android Awareness Month</div>
+          <div className="story_txt">Debunking the top 10 myths about our mechanical bretheren.</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
             <img src={atmosphere} alt="Korolev" />
           </a>
-          <span className="story_txt_title" />
-          <p className="story_txt">2020&apos;s hottest destination !</p>
+          <div className="story_txt_title" />
+          <div className="story_txt">2020&apos;s hottest destination !</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.sciencealert.com/the-flat-earth-society-responded-elon-musk-twitter-beautiful-mars-conspiracy">
             <img src={flat} alt="flat" />
           </a>
-          <span className="story_txt_title">Flat Earth Society Twitter statement: Mars is round.</span>
-          <p className="story_txt">also Earth is a disk</p>
+          <div className="story_txt_title">Flat Earth Society Twitter statement: Mars is round.</div>
+          <div className="story_txt">also Earth is a disk</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
             <img src={orbit} alt="orbit" />
           </a>
-          <span className="story_txt_title">Mars&apos; controversial orbit relative to Earth</span>
-          <p className="story_txt">Hasbro lawyers issue copyright infrigement lawsuit over Spirograph-shaped elipse.</p>
+          <div className="story_txt_title">Mars&apos; controversial orbit relative to Earth</div>
+          <div className="story_txt">Hasbro lawyers issue copyright infrigement lawsuit over Spirograph-shaped elipse.</div>
         </div>
       </Carousel>
     </div>

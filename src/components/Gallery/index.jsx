@@ -18,12 +18,11 @@ const Gallery = () => (
     <div className="top-stories_header">Gallery</div>
     <div>
       <Carousel
-        // centered
         autoPlay={5500}
         animationSpeed={1500}
-        // arrows
         dots
         infinite
+        keepDirectionWhenDragging
         slidesPerPage={1}
         breakpoints={{
           400: {
@@ -50,13 +49,13 @@ const Gallery = () => (
         }}
         offset={0}
       >
-        <img src={marstrue} alt="true" width={300} />
-        <img src={impact} alt="impact" width={300} />
-        <img src={atmosphere} alt="atmosphere" width={300} />
-        <img src={korolevcrater} alt="crater" width={300} />
-        <img src={marstrue} alt="true" width={300} />
-        <img src={impact} alt="impact" width={300} />
-        <img src={atmosphere} alt="atmosphere" width={300} />
+        <img src={marstrue} alt="true" width={325} />
+        <img src={impact} alt="impact" width={325} />
+        <img src={atmosphere} alt="atmosphere" width={325} />
+        <img src={korolevcrater} alt="crater" width={325} />
+        <img src={marstrue} alt="true" width={325} />
+        <img src={impact} alt="impact" width={325} />
+        <img src={atmosphere} alt="atmosphere" width={325} />
       </Carousel>
     </div>
   </div>

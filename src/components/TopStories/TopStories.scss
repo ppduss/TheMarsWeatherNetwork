@@ -14,23 +14,24 @@
 }
 .story {
   background-color: $p1black;
-  max-width: 264px;
+  max-width: 280px;
   min-height: 275px;
   margin: 4px;
   img {
-    width: 260px;
+    width: 276px;
     margin: 2px;
     // padding: 4px;
   }
 }
 .story_txt {
+  // text-align: right;
   color: whitesmoke;
   font-size: 0.8rem;
-  margin: 6px
+  margin: 6px 14px
 
 }
 .story_txt_title {
-  color: $p1yellow;
-  margin: 6px;
+   color: $p1yellow;
+  margin: 3px 14px;
   font-size: 0.9rem;
 }
