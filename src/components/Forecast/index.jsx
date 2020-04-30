@@ -93,25 +93,25 @@ const Forecast = () => {
   };
 
   const ForecastContent = () => (
-    <div className="sol_container">
-      <div className="sol bold">
-        <div className="day">
+    <div className="sol_container descriptors">
+      <div className="sol main">
+        <div className="day title">
           <div>Earth date</div>
           <div>Martian date</div>
         </div>
-        <div className="temperature">
+        <div className="temperature title">
           <div>Avg. Temp</div>
           <div>High </div>
           <div>Low</div>
         </div>
-        <div className="wind">
+        <div className="wind title">
           <div>Wind Speed</div>
           <div>Avg.</div>
           <div>Low</div>
           <div>High</div>
           <div>Avg. Direction</div>
         </div>
-        <div className="pressure">
+        <div className="pressure title">
           <div>Avg. Pressure </div>
         </div>
       </div>

@@ -12,6 +12,9 @@
   flex-direction: row;
   // margin-top: 8px;
 }
+.descriptors {
+ 
+}
 
 .sol {
   display: flex;
@@ -22,10 +25,12 @@
   color: $p1yellow;
   font-weight: 300;
   font-size: 0.6rem;
-  line-height: 20px;
+  line-height: 35px;
   text-align: center;
   margin: 0px 1px;
-
+  &.main {
+    background-color: red($color: #000000);
+  }
   &.bold {
     font-weight: 400;
   }

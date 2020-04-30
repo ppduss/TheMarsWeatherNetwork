@@ -44,22 +44,25 @@ const Topstories = () => (
             slidesPerPage: 1,
           },
           600: {
-            slidesPerPage: 1.5,
+            slidesPerPage: 1.75,
           },
           800: {
             slidesPerPage: 2,
           },
-          1000: {
+          900: {
             slidesPerPage: 2.5,
           },
-          1200: {
+          1000: {
+            slidesPerPage: 2.75,
+          },
+          1350: {
             slidesPerPage: 3,
           },
           1600: {
-            slidesPerPage: 3,
+            slidesPerPage: 3.5,
           },
           2000: {
-            slidesPerPage: 3.5,
+            slidesPerPage: 3.75,
           },
         }}
         offset={0}

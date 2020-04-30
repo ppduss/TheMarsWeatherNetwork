@@ -85,8 +85,8 @@ text-decoration: none;
   .forecast_container {
     grid-area: forecast;
     justify-self: start;
-    background-color: $p1black;
-    border: $p1yellow solid 1px;
+    background-color: black;
+    // border: $p1yellow solid 1px;
     z-index: 3;
   }
   .UVindex_container {
@@ -101,13 +101,13 @@ text-decoration: none;
   }
   .gallery_container {
     grid-area: gallery;
-    background-color: $p1navyFade;
+    background-color: $nightfade;
     max-width: 100%;
     z-index: 3;
   }
   .top-stories_container {
     grid-area: topstories;
-    background-color: $p1navyFade;
+    background-color: $nightfade;
     max-width: 100%;
     margin-top: 10%;
     z-index: 3;
