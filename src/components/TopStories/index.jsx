@@ -35,6 +35,8 @@ const Topstories = () => (
     <div className="top-stories_header">Top Stories</div>
     <div className="carousel-container">
       <Carousel
+        autoPlay={5500}
+        animationSpeed={1500}
         dots
         infinite
         keepDirectionWhenDragging

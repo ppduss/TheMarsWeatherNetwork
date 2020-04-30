@@ -36,7 +36,7 @@ const APOD = () => {
 
   return (
     <div className="APOD_main">
-      <div className="title">Astronomy Picture of the Day</div>
+      <div className="APOD_title">Astronomy Picture of the Day</div>
       <a href="https://apod.nasa.gov/apod/astropix.html">
         {mediaSelector()}
         <div className="bottom_text">{pictureTitle}</div>

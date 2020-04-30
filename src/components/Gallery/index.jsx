@@ -18,8 +18,8 @@ const Gallery = () => (
     <div className="top-stories_header">Gallery</div>
     <div>
       <Carousel
-        autoPlay={5500}
-        animationSpeed={1500}
+        // autoPlay={11000}
+        // animationSpeed={1500}
         dots
         infinite
         keepDirectionWhenDragging

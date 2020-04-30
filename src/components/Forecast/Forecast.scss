@@ -69,11 +69,25 @@
     }
   }
   .empty_space {
-  height: 2.2rem;
+  height: 2.1rem;
   }
 }
 
 @media (min-width: 768px) {
+  .sol {
+    min-width: 70px;
+    font-size: 0.9rem;
+    padding: 4px;
+    line-height: 40px;
+    &.descriptors {
+    min-width: 110px;
+    }
+  }
+  .empty_space {
+  height: 2.8rem;
+  }
+}
+@media (min-width: 992px) {
   .sol {
     min-width: 75px;
     font-size: 1rem;
@@ -81,8 +95,8 @@
     line-height: 45px;
     &.descriptors {
     min-width: 120px;
-    }
   }
+    }
   .empty_space {
   height: 2.8rem;
   }

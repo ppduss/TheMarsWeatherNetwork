@@ -6,9 +6,6 @@ import Topstories from './components/TopStories';
 import Gallery from './components/Gallery';
 import UVindex from './components/UVindex/index';
 import APOD from './components/APOD/index';
-// IMAGES
-import Marsgif from './assets/Mars.gif';
-import skylinetrees from './assets/Footer/forest-transparent.png';
 
 function App() {
   const Maincomponent = () => (
@@ -24,7 +21,6 @@ function App() {
         </div>
         <div className="header_container">
           <header className="main-component_header">
-            {/* <img className="mars-gif" alt="marsgif" src={Marsgif} /> */}
             <div className="titles_group">
               <div className="title">The Mars Weather Network</div>
               <div className="sub-title">The latest weather updates from Elysium Planitia. </div>
@@ -46,12 +42,7 @@ function App() {
         <div className="gallery_container">
           <Gallery />
         </div>
-        <div className="footer_wrapper">
-          {/* <img className="footer" src={skylinetrees} alt="oups" /> */}
-          {/* <div /> */}
-        </div>
-
-
+        <div className="footer_wrapper" />
       </div>
     </div>
   );
