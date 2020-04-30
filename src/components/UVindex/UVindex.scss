@@ -3,24 +3,23 @@
 .UV_main{
   font-family: 'Lato', sans-serif;
   width: 300px;
-  border-style: solid;
-  border-color: $p1blue;
-  background-color: $p1yellow;
-  border-width: 5px;
+  border: solid 6px $p1navy;
+  color: $p1black;
   border-radius: 1px;
 }
 .UVlevels {
 display: flex;
 flex-wrap: wrap;
 font-size: 0.6rem;
+color: black;
 }
 .UVtitle {
-  // color: $p1navy;
+  background-color: $p1yellow;
   display: flex;
   justify-content: center;
   align-items: center;
   letter-spacing: 3px;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   // width: 150px;
   height: 35px;
 }
@@ -52,12 +51,20 @@ font-size: 0.6rem;
   align-items: center;
   text-align: center;
   width: 300px;
-  height: 90px;
-  font-size: 0.9rem;
+  height: 100px;
+  font-size: 0.8rem;
+  font-weight: 200;
+  color: white;
+  background-color: $p1navy;
+
   .purple {
     color: black;
     background-color: #B1439F;
     margin: 4px;
-    padding: 10px;
+    padding: 20px 10px;
     }
+  .warning {
+    padding: 10px;
+    font-size: 0.9rem;
+  }
 }

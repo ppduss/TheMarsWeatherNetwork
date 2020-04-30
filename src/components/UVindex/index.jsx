@@ -24,7 +24,7 @@ const UVindex = () => {
       </div>
       <div className="extreme">
         <div className="purple">EXTREME:</div>
-        <div>Extra protection required. SPF 100 sunscreen strongly recommended</div>
+        <div className="warning">Extra protection is required. Minimum SPF 100 sunscreen strongly recommended</div>
       </div>
     </div>
   );
