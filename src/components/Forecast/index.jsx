@@ -69,12 +69,13 @@ const Forecast = () => {
                 <div>Sol {sol}</div>
               </div>
               <div className="temperature">
+                <div className="empty_space" />
                 <div>{safety(day.AT.av)}°C</div>
                 <div>{safety(day.AT.mx)}°C</div>
                 <div>{safety(day.AT.mn)}°C</div>
               </div>
               <div className="wind">
-                <div className="empty-space" />
+                <div className="empty_space" />
                 <div>{safety(day.HWS.av)} m/s</div>
                 <div>{safety(day.HWS.mn)} m/s</div>
                 <div>{safety(day.HWS.mx)} m/s</div>
@@ -93,26 +94,27 @@ const Forecast = () => {
   };
 
   const ForecastContent = () => (
-    <div className="sol_container descriptors">
-      <div className="sol main">
-        <div className="day title">
+    <div className="sol_container">
+      <div className="sol descriptors">
+        <div className="day">
           <div>Earth date</div>
           <div>Martian date</div>
         </div>
-        <div className="temperature title">
-          <div>Avg. Temp</div>
+        <div className="temperature">
+          <div>Temperature</div>
+          <div>Average</div>
           <div>High </div>
           <div>Low</div>
         </div>
-        <div className="wind title">
+        <div className="wind">
           <div>Wind Speed</div>
           <div>Avg.</div>
           <div>Low</div>
           <div>High</div>
-          <div>Avg. Direction</div>
+          <div>Avg. Dir.</div>
         </div>
-        <div className="pressure title">
-          <div>Avg. Pressure </div>
+        <div className="pressure">
+          <div>Avg. Press. </div>
         </div>
       </div>
       {displayDays()}
