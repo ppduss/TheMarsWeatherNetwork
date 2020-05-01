@@ -41,10 +41,13 @@ const Gallery = () => (
             slidesPerPage: 3,
           },
           1600: {
-            slidesPerPage: 3,
+            slidesPerPage: 3.25,
           },
           2000: {
-            slidesPerPage: 3.5,
+            slidesPerPage: 4,
+          },
+          4000: {
+            slidesPerPage: 4,
           },
         }}
         offset={0}

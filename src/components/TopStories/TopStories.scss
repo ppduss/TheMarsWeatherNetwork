@@ -10,28 +10,33 @@
   background-color: $p1yellow;
   width: 30%;
   padding: 5px;
-  margin-bottom: 6px;
+  margin-bottom: 2px;
 }
 .story {
-  background-color: $p1black;
-  max-width: 270px;
-  min-height: 300px;
+  background-color: $night;
+  border: 2px solid $p1black;
+  border-radius: 2px;
+  max-width: 258px;
+  min-height: 280px;
   margin: 4px;
   img {
-    width: 264px;
-    margin: 3px;
+    width: 258px;
+    border-radius: 1px;
+    // margin: 4px;
     // padding: 4px;
   }
 }
 .story_txt {
   // text-align: right;
   color: whitesmoke;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   margin: 6px 14px
 
 }
 .story_txt_title {
-   color: $p1yellow;
+  color: $p1yellow;
   margin: 3px 14px;
   font-size: 0.9rem;
+  // border-bottom: 1px solid $p1black;
+  // padding-bottom: 4px;
 }

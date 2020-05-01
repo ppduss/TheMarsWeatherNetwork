@@ -1,5 +1,4 @@
 @import './global.scss';
-// @import './assets/Footer/mountain.png';
 
 a:link {
   text-decoration: none;
@@ -13,7 +12,6 @@ a:hover {
 a:active {
   text-decoration: none;
 }
-
 
 .bottom_text {
   color: white;
@@ -31,7 +29,7 @@ text-decoration: none;
 .main-component_wrapper {
   display: grid;
   width: 100%;
-  grid-template-columns: 0% 4fr 0fr 0%;
+  grid-template-columns: auto 4fr 0fr auto;
   grid-template-areas: 
       ". theheader . ."
       ". forecast forecast ." 
@@ -39,20 +37,16 @@ text-decoration: none;
       ". UVindex . ."
       ". topstories topstories ."
       ". gallery gallery .";
-      // "footer footer footer footer";
   justify-items: center;
   gap: 0.5%;
   background: radial-gradient(ellipse at bottom, #1B2735 0%, #090A0F 80%, #090A0F 100%);
-  // z-index: 0;
   overflow: hidden;
 
   .main-component_header {
     font-size: calc(0.9rem);
-    // align-items: center;
     justify-content: left;
     background-color: $p1yellow;
     padding: 25px 22px;
-  
     .title {
     color: black;
     font-size: 1.5rem;
@@ -91,13 +85,13 @@ text-decoration: none;
   }
   .UVindex_container {
     grid-area: UVindex;
-    // justify-self: start;
+    // justify-self: end;
     z-index: 3;
   }
   .APOD_container {
     grid-area: APOD;
-    background-color: $p1navy;
-    max-width: 100%;
+    max-width: 480px;
+    min-width: 330px;
     z-index: 3;
   }
   .gallery_container {
@@ -119,7 +113,7 @@ text-decoration: none;
     grid-area: footer;
     height: 540px; 
     width: 100%;
-    z-index: 0;
+    z-index: 1;
     background-image: url(./assets/Footer/mountain.png);
     background-size: auto;
     background-position: bottom left;
@@ -153,23 +147,25 @@ text-decoration: none;
 };
 @media (min-width: 992px) {
   .main-component_wrapper {
-    grid-template-columns: 5% 4fr 3fr 5%;
+    grid-template-columns: 1% 4fr 2fr 1fr 1%;
     grid-template-areas: 
-      ". theheader . ."
-      ". forecast APOD ." 
-      ". forecast UVindex ."
-      ". topstories topstories ."
-      ". gallery gallery ."
-      "footer footer footer footer";
-    gap: 1%;
+      ". theheader theheader theheader ."
+      ". forecast forecast forecast ." 
+      ". APOD UVindex . ."
+      ". topstories topstories topstories ."
+      ". gallery gallery gallery ."
+      "footer footer footer footer footer";
     .UVindex_container {
-      justify-self: center;
+      justify-self: start;
+      align-self: start;
     }
+    .APOD_container {
+      justify-self: start; }
   }
 };
 @media (min-width: 1200px) {
   .main-component_wrapper {
-    grid-template-columns: auto 4fr 3fr auto;
+    grid-template-columns: 8% 4fr 3fr 4%;
     grid-template-areas: 
       ". theheader . ."
       ". forecast APOD ." 
@@ -177,6 +173,10 @@ text-decoration: none;
       ". topstories topstories ."
       ". gallery gallery ."
       "footer footer footer footer";
+    .header_container {
+      justify-self: start; }
+    .forecast_container {
+      justify-self: start; }
   }
 };
 @media (min-width: 2000px) {
@@ -193,24 +193,34 @@ text-decoration: none;
 };
 
 // * STARS * //
+
+.stars_container {
+  border: 4px solid red;
+  background-color: darkgoldenrod;
+  grid-template-areas: stars;
+  // grid-area: 1 / 1 / 2 / 2;
+  // z-index: 0;
+
+}
+
 @function multiple-box-shadow ($n) {
   $value: '#{random(2000)}px #{random(2000)}px #fff';
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(2000)}px #{random(2000)}px #fff';
+    $value: '#{$value} , #{random(2500)}px #{random(2000)}px #fff';
   }
   @return unquote($value)
 }
 @function multiple-yellow-shadow ($n) {
   $value: '#{random(3000)}px #{random(3000)}px #fffdeb';
   @for $i from 2 through $n {
-    $value: '#{$value} , #{random(3000)}px #{random(3000)}px #fffdeb';
+    $value: '#{$value} , #{random(2500)}px #{random(2000)}px #fffdeb';
   }
   @return unquote($value)
 }
 
 $shadows-small:  multiple-box-shadow(500);
 $shadows-medium: multiple-box-shadow(500);
-$shadows-big:    multiple-yellow-shadow(30);
+$shadows-big:    multiple-yellow-shadow(100);
 
 #stars {
   width: 1px;
@@ -251,7 +261,7 @@ $shadows-big:    multiple-yellow-shadow(30);
   height: 2px;
   background: transparent;
   box-shadow: $shadows-big;
-  animation: animStar 500s linear infinite;
+  animation: animStar 700s linear infinite;
     
   &:after {
     content: " ";
@@ -276,12 +286,11 @@ $shadows-big:    multiple-yellow-shadow(30);
 // * SHOOTING STAR * //
 
 $shooting-time: 20s;
-
 .night {
   position: relative;
   width: 100%;
   height: 100%;
-  transform: rotateZ(45deg);
+  transform: rotateZ(48deg);
   // animation: sky 200000ms linear infinite;
 }
 

@@ -11,9 +11,11 @@ function App() {
   const Maincomponent = () => (
     <div className="">
       <div className="main-component_wrapper">
-        <div id="stars" />
-        <div id="stars2" />
-        <div id="stars3" />
+        <div className="stars_container">
+          <div id="stars" />
+          <div id="stars2" />
+          <div id="stars3" />
+        </div>
         <div className="night">
           <div className="shooting_star" />
           <div className="shooting_star" />

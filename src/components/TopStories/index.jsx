@@ -49,7 +49,7 @@ const Topstories = () => (
             slidesPerPage: 1.75,
           },
           800: {
-            slidesPerPage: 2,
+            slidesPerPage: 2.25,
           },
           900: {
             slidesPerPage: 2.5,
@@ -58,13 +58,16 @@ const Topstories = () => (
             slidesPerPage: 2.75,
           },
           1350: {
-            slidesPerPage: 3,
-          },
-          1600: {
             slidesPerPage: 3.5,
           },
+          1600: {
+            slidesPerPage: 4,
+          },
           2000: {
-            slidesPerPage: 3.75,
+            slidesPerPage: 4.5,
+          },
+          4000: {
+            slidesPerPage: 5.5,
           },
         }}
         offset={0}
@@ -81,13 +84,13 @@ const Topstories = () => (
             <img src={manfell} alt="Is the Starman in space ?" />
           </a>
           <div className="story_txt_title">Is David Bowie really dead ?</div>
-          <div className="story_txt">Or did the &ldquo;man who fell to earth&ldquo; simply return home ?</div>
+          <div className="story_txt">Or did the &quot;man who fell to earth&quot; simply return home ?</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.npr.org/2018/12/21/679155506/huge-martian-crater-korolev-appears-topped-with-miles-of-pristine-snow">
             <img src={korolevcrater} alt="Korolev" />
           </a>
-          <div className="story_txt_title">This year&apos;s hottest ski destination ?</div>
+          <div className="story_txt_title">This year&apos;s best ski destination ?</div>
           <div className="story_txt">Why this is the year the Korolev crater is destined to shine.</div>
         </div>
         <div className="story">
@@ -95,14 +98,14 @@ const Topstories = () => (
             <img src={suburb} alt="suburb" />
           </a>
           <div className="story_txt_title">Urban Planner can&apos;t wait to turn Mars into suburban sprawl.</div>
-          <div className="story_txt">&ldquo;It&apos;s gonna be lit.&ldquo;</div>
+          <div className="story_txt">&quot;It&apos;s gonna be lit.&quot;</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Erg_(landform)">
             <img src={atmosphere} alt="Sandy" />
           </a>
           <div className="story_txt_title">How sandy is the Red Planet ?</div>
-          <div className="story_txt">NASA experts finally open up about the issue: &ldquo;It&apos;s pretty sandy&ldquo;.</div>
+          <div className="story_txt">NASA experts finally open up about the issue: &quot;It&apos;s pretty sandy&quot;.</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.spacex.com/mars">
@@ -115,8 +118,8 @@ const Topstories = () => (
           <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Philip_K._Dick">
             <img src={pkdbooks} alt="android rights" />
           </a>
-          <div className="story_txt_title">Android rights expert: &ldquo;Philip K. Dick was robophobic&ldquo;</div>
-          <div className="story_txt">&ldquo;And what&apos;s the deal with the whole sheep thing ?&ldquo;</div>
+          <div className="story_txt_title">Android rights expert: &quot;Philip K. Dick was robophobic&quot;</div>
+          <div className="story_txt">&quot;And what&apos;s the deal with sheep ?&quot;</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="http://www.the13thfloor.tv/2016/04/12/i-feel-fantastic-the-horrifying-history-of-tara-the-android/">
@@ -136,14 +139,14 @@ const Topstories = () => (
           <a target="_blank" rel="noopener noreferrer" href="https://www.sciencealert.com/the-flat-earth-society-responded-elon-musk-twitter-beautiful-mars-conspiracy">
             <img src={flat} alt="flat" />
           </a>
-          <div className="story_txt_title">Flat Earth Society Twitter statement: Mars is round.</div>
+          <div className="story_txt_title">Flat Earth Society: &apos;Mars is round.&quot;</div>
           <div className="story_txt">also Earth is a disk</div>
         </div>
         <div className="story">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=LKYPYj2XX80">
             <img src={orbit} alt="orbit" />
           </a>
-          <div className="story_txt_title">Mars&apos; controversial orbit relative to Earth</div>
+          <div className="story_txt_title">Mars&apos; controversial orbit</div>
           <div className="story_txt">Hasbro lawyers issue copyright infrigement lawsuit over Spirograph-shaped elipse.</div>
         </div>
       </Carousel>
