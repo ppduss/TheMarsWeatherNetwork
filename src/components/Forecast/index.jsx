@@ -22,11 +22,9 @@ const Forecast = () => {
 
   const displayDays = () => {
     if (weatherData) {
-      // console.log({ newDate });
       const solKeysArray = weatherData.sol_keys;
       const output = solKeysArray.map((sol) => {
         const day = weatherData[sol];
-
         const generateDate = () => {
           if (day.First_UTC.slice(5, 7) === '01') {
             return ('Jan');
@@ -54,10 +52,10 @@ const Forecast = () => {
             return ('Dec');
           }
         };
-        const safety = (stuff) => {
-          if (stuff == null) {
-            return ('N/A');
-          } return (Math.round(stuff));
+        const safety = (main, element, specifics, unit) => {
+          if (main && element && specifics) {
+            return (Math.round(specifics) + unit);
+          } return ('Unavlbl');
         };
         return (
           <>
@@ -70,19 +68,19 @@ const Forecast = () => {
               </div>
               <div className="temperature">
                 <div className="empty_space" />
-                <div>{safety(day.AT.av)}°C</div>
-                <div>{safety(day.AT.mx)}°C</div>
-                <div>{safety(day.AT.mn)}°C</div>
+                <div>{safety(day, day.AT, day.AT.av, ' °C')}</div>
+                <div>{safety(day, day.AT, day.AT.mx, ' °C')}</div>
+                <div>{safety(day, day.AT, day.AT.mn, ' °C')}</div>
               </div>
               <div className="wind">
                 <div className="empty_space" />
-                <div>{safety(day.HWS.av)} m/s</div>
-                <div>{safety(day.HWS.mn)} m/s</div>
-                <div>{safety(day.HWS.mx)} m/s</div>
+                <div>{safety(day, day.HWS, day.HWS.av, ' m/s')}</div>
+                <div>{safety(day, day.HWS, day.HWS.mn, ' m/s')}</div>
+                <div>{safety(day, day.HWS, day.HWS.mx, ' m/s')}</div>
                 <div>{day.WD.most_common.compass_point}</div>
               </div>
               <div className="pressure">
-                <div>{safety(day.PRE.av)}</div>
+                <div>{safety(day, day.PRE, day.PRE.av, ' pa')}</div>
               </div>
             </div>
           </>
