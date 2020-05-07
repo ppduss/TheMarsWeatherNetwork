@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Forecast.scss';
 import axios from 'axios';
+import moment from 'moment';
 
 const Forecast = () => {
   const [weatherData, setWeatherData] = useState(undefined);
@@ -25,7 +26,7 @@ const Forecast = () => {
     const solKeysArray = (weatherData && weatherData.sol_keys) || sevenEmptySolKeys;
     const output = solKeysArray.map((sol) => {
       const day = ((weatherData && weatherData[sol]) || sol);
-      // generate date here?
+      
 
       // const generateDate = () => {
       //   if (day.First_UTC.slice(5, 7) === '01') {
@@ -70,7 +71,7 @@ const Forecast = () => {
         <>
           <div className="sol">
             <div className="day">
-              <div>{`${generateDate()} ${day.First_UTC.slice(8, 10)}` || 'Loading'}</div>
+              <div>{`${moment(day.First_UTC)} ${moment(day.First_UTC).month()}` || 'Loading'}</div>
               <div>Sol {sol}</div>
             </div>
             <div className="temperature">
