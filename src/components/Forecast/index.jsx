@@ -28,39 +28,6 @@ const Forecast = () => {
       const day = ((weatherData && weatherData[sol]) || sol);
       
 
-      // const generateDate = () => {
-      //   if (day.First_UTC.slice(5, 7) === '01') {
-      //     return ('Jan');
-      //   } if (day.First_UTC.slice(5, 7) === '02') {
-      //     return ('Feb');
-      //   } if (day.First_UTC.slice(5, 7) === '03') {
-      //     return ('Mar');
-      //   } if (day.First_UTC.slice(5, 7) === '04') {
-      //     return ('Apr');
-      //   } if (day.First_UTC.slice(5, 7) === '05') {
-      //     return ('May');
-      //   } if (day.First_UTC.slice(5, 7) === '06') {
-      //     return ('June');
-      //   } if (day.First_UTC.slice(5, 7) === '07') {
-      //     return ('July');
-      //   } if (day.First_UTC.slice(5, 7) === '08') {
-      //     return ('Aug');
-      //   } if (day.First_UTC.slice(5, 7) === '09') {
-      //     return ('Sep');
-      //   } if (day.First_UTC.slice(5, 7) === '10') {
-      //     return ('Oct');
-      //   } if (day.First_UTC.slice(5, 7) === '11') {
-      //     return ('Nov');
-      //   } if (day.First_UTC.slice(5, 7) === '12') {
-      //     return ('Dec');
-      //   }
-      // };
-      // const safety = (main, element, specifics, unit) => {
-      //   if (main && element && specifics) {
-      //     return (Math.round(specifics) + unit);
-      //   } return (false);
-      // };
-
       const displayNumbers = (value, unit) => {
         if (value) {
           return (Math.round(value) + unit);
@@ -70,18 +37,18 @@ const Forecast = () => {
       const displayDays = () => (
         <>
           <div className="sol">
-            <div className="day">
-              <div>{`${moment(day.First_UTC)} ${moment(day.First_UTC).month()}` || 'Loading'}</div>
-              <div>Sol {sol}</div>
+            <div>
+              <div>{`${moment.utc(day.First_UTC).format("MMM")} ${moment(day.First_UTC).format("D")}`}</div>
             </div>
-            <div className="temperature">
-              <div className="empty_space" />
+            <div className="details">Sol {sol}</div>
+            <div className="empty_space" />
+            <div className="details">
               <div>{displayNumbers(day?.AT?.av, ' °C')}</div>
               <div>{displayNumbers(day && day.AT && day.AT.mx, ' °C')}</div>
               <div>{displayNumbers(day && day.AT && day.AT.mn, ' °C')}</div>
             </div>
-            <div className="wind">
-              <div className="empty_space" />
+            <div className="empty_space" />
+            <div className="details">
               <div>{displayNumbers(day && day.HWS && day.HWS.av, ' m/s')}</div>
               <div>{displayNumbers(day && day.HWS.mn, ' m/s')}</div>
               <div>{displayNumbers(day && day.HWS.mx, ' m/s')}</div>
@@ -99,24 +66,22 @@ const Forecast = () => {
   const ForecastContent = () => (
     <div className="sol_container">
       <div className="sol descriptors">
-        <div className="day">
-          <div>Earthian date</div>
-          <div>Martian date</div>
-        </div>
-        <div className="temperature">
-          <div>Temperature</div>
+        <div className="categories">Earthian date</div>        
+        <div className="details">Martian date</div>
+        <div className="categories">Temperature</div>
+        <div className="details">
           <div>Average</div>
           <div>High </div>
           <div>Low</div>
         </div>
-        <div className="wind">
-          <div>Wind Speed</div>
+        <div className="categories">Wind Speed</div>
+        <div className="details">
           <div>Avg.</div>
           <div>Low</div>
           <div>High</div>
           <div>Avg. Dir.</div>
         </div>
-        <div className="pressure">
+        <div className="categories">
           <div>Avg. Press. </div>
         </div>
       </div>
