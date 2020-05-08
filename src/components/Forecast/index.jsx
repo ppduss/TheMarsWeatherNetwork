@@ -37,24 +37,22 @@ const Forecast = () => {
       const displayDays = () => (
         <>
           <div className="sol">
-            <div>
-              <div>{`${moment.utc(day.First_UTC).format("MMM")} ${moment(day.First_UTC).format("D")}`}</div>
-            </div>
+            <div className="descriptors categories">{`${moment.utc(day.First_UTC).format("MMM")} ${moment(day.First_UTC).format("D")}`}</div>
             <div className="details">Sol {sol}</div>
-            <div className="empty_space" />
+            <div className="empty_space categories" />
             <div className="details">
               <div>{displayNumbers(day?.AT?.av, ' °C')}</div>
               <div>{displayNumbers(day && day.AT && day.AT.mx, ' °C')}</div>
               <div>{displayNumbers(day && day.AT && day.AT.mn, ' °C')}</div>
             </div>
-            <div className="empty_space" />
+            <div className="empty_space categories" />
             <div className="details">
               <div>{displayNumbers(day && day.HWS && day.HWS.av, ' m/s')}</div>
               <div>{displayNumbers(day && day.HWS.mn, ' m/s')}</div>
               <div>{displayNumbers(day && day.HWS.mx, ' m/s')}</div>
               <div>{day && day.WD && day.WD.most_common && day.WD.most_common.compass_point || 'Loading'}</div>
             </div>
-            <div className="pressure">
+            <div className="pressure categories">
               <div>{displayNumbers(day && day.PRE && day.PRE.av, ' pa')}</div>
             </div>
           </div>
@@ -82,7 +80,7 @@ const Forecast = () => {
           <div>Avg. Dir.</div>
         </div>
         <div className="categories">
-          <div>Avg. Press. </div>
+          <div>Pressure </div>
         </div>
       </div>
       {displaySelector()}
