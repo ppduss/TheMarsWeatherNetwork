@@ -10,12 +10,12 @@ import APOD from './components/APOD/index';
 function App() {
   const Maincomponent = () => (
     <div className="">
+      <div className="stars_container">
+        <div id="stars" />
+        <div id="stars2" />
+        <div id="stars3" />
+      </div>
       <div className="main-component_wrapper">
-        <div className="stars_container">
-          <div id="stars" />
-          <div id="stars2" />
-          <div id="stars3" />
-        </div>
         <div className="night">
           <div className="shooting_star" />
           <div className="shooting_star" />
@@ -44,6 +44,7 @@ function App() {
         <div className="gallery_container">
           <Gallery />
         </div>
+
         <div className="footer_wrapper" />
       </div>
     </div>

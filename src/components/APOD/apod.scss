@@ -14,15 +14,18 @@
   color: $p1yellow;
   text-align: center;
 }
+.text_container {
+  margin: 6px;
+}
 .bottom_text {
   color: whitesmoke;
   font-weight: 400;
   text-decoration: none;
-  margin: 6px 10px;
+  padding-bottom: 4px;
 }
 .description {
   color: whitesmoke;
-  margin: 6px 10px;
+  padding-bottom: 8px;
 }
 .photograph {
   width: 100%;

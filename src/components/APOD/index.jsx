@@ -39,8 +39,10 @@ const APOD = () => {
       <div className="APOD_title">Astronomy Picture of the Day</div>
       <a href="https://apod.nasa.gov/apod/astropix.html">
         {mediaSelector()}
-        <div className="bottom_text">{pictureTitle}</div>
-        <div className="description">{description}...(continued)</div>
+        <div className="text_container">
+          <div className="bottom_text">{pictureTitle}</div>
+          <div className="description">{description}...(continued)</div>
+        </div>
       </a>
     </div>
   );
