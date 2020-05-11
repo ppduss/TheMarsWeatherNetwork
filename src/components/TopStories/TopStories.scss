@@ -1,11 +1,7 @@
 @import '../../global.scss';
 
-.carousel-container {
-  // width: 90vw ;
-}
 
 .top-stories_header {
-  // background-color: #103044;
   font-family: inherit;
   background-color: $p1yellow;
   width: 30%;
@@ -22,12 +18,9 @@
   img {
     width: 258px;
     border-radius: 1px;
-    // margin: 4px;
-    // padding: 4px;
   }
 }
 .story_txt {
-  // text-align: right;
   color: whitesmoke;
   font-size: 0.75rem;
   margin: 6px 14px
@@ -37,6 +30,4 @@
   color: $p1yellow;
   margin: 3px 14px;
   font-size: 0.9rem;
-  // border-bottom: 1px solid $p1black;
-  // padding-bottom: 4px;
 }

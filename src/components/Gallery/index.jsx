@@ -4,21 +4,20 @@ import '../TopStories/TopStories.scss';
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 // IMAGES
-// import manfell from '../../assets/images43/manfell.jpeg';
-// import manfell2 from '../assets/images43/manfell2.jpeg';
 import atmosphere from '../../assets/images43/atmosphere.jpeg';
-import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
-// import aliens from '../../assets/images43/aliens.jpeg';
+import marsYellow from '../../assets/images43/marsYellow.jpeg';
 import impact from '../../assets/images43/impactcrater.jpeg';
 import marstrue from '../../assets/images43/marstrue.jpeg';
-
+import rover from '../../assets/images43/rover.jpeg';
+import rover2 from '../../assets/images43/rover2.jpeg';
+import near from '../../assets/images43/near.jpeg';
 
 const Gallery = () => (
   <div>
     <div className="top-stories_header">Gallery</div>
     <div>
       <Carousel
-        // autoPlay={11000}
+        // autoPlay={8000}
         // animationSpeed={1500}
         dots
         infinite
@@ -55,10 +54,10 @@ const Gallery = () => (
         <img src={marstrue} alt="true" width={325} />
         <img src={impact} alt="impact" width={325} />
         <img src={atmosphere} alt="atmosphere" width={325} />
-        <img src={korolevcrater} alt="crater" width={325} />
-        <img src={marstrue} alt="true" width={325} />
-        <img src={impact} alt="impact" width={325} />
-        <img src={atmosphere} alt="atmosphere" width={325} />
+        <img src={marsYellow} alt="marsYellow" width={325} />
+        <img src={rover} alt="rover" width={325} />
+        <img src={rover2} alt="rover2" width={325} />
+        <img src={near} alt="near" width={325} />
       </Carousel>
     </div>
   </div>

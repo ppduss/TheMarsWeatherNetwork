@@ -2,11 +2,6 @@
   font-family: "KarbonTest";
   src: local("Karbon Test thin")
   }
-
-// html {
-//   //  height: 100%;
-//   // width: 100%;
-// }
 body {
   margin: 0;
 }
@@ -18,22 +13,5 @@ $deepgreen: #256167;
 $p1black: #111111;
 $p1navy: #243634;
 $p1navyFade: #243634c2;
-$p1blue: #1B646F;
 $p1yellow: #fdc00c;
-$p1yellowfade: #fdc10cbd;
-$p1clay: #e78b5f;
-$p1brown: #A97440;
 
-@mixin exampleMixin {
-  color: blue;
-  background: blue;
-}
-
-@mixin mixinWithParams($this, $that) {
-  color: $this;
-  background: $that;
-}
-
-@mixin usingOtherMixin {
-  @include mixinWithParams(blue, red);
-}

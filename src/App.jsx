@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.scss';
 // COMPONENTS
-import Forecast from './components/Forecast';
+import Forecast from './components/Forecast/index';
 import Topstories from './components/TopStories';
 import Gallery from './components/Gallery';
 import UVindex from './components/UVindex/index';
@@ -49,7 +49,6 @@ function App() {
       </div>
     </div>
   );
-
   return (
     <Maincomponent />
   );

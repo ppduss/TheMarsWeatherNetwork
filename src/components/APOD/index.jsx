@@ -13,7 +13,7 @@ const APOD = () => {
       .then((response) => {
         setPictureOfTheDay(response.data.url);
         setPictureTitle(response.data.title);
-        setDescription(response.data.explanation.slice(0, 180));
+        setDescription(response.data.explanation.slice(0, 170));
         setMediaType(response.data.media_type);
         console.log(response.data);
       })

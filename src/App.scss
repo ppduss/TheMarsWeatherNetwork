@@ -3,16 +3,6 @@
 a:link {
   text-decoration: none;
 }
-a:visited {
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: none;
-}
-a:active {
-  text-decoration: none;
-}
-
 .bottom_text {
   color: white;
   font-size: 0.85rem;
@@ -25,7 +15,6 @@ font-size: 0.85rem;
 line-height: 18px;
 text-decoration: none;
 }
-
 .main-component_wrapper {
   display: grid;
   width: 100%;
@@ -68,6 +57,7 @@ text-decoration: none;
       font-size: 0.75rem;}
     }
   }
+
   //COMPONENT CONTAINERS//
   .header_container {
     grid-area: theheader;
@@ -79,12 +69,10 @@ text-decoration: none;
   .forecast_container {
     grid-area: forecast;
     max-width: 100%;
-    // justify-self: start;
     z-index: 3;
   }
   .UVindex_container {
     grid-area: UVindex;
-    // justify-self: end;
     z-index: 3;
   }
   .APOD_container {
@@ -108,7 +96,6 @@ text-decoration: none;
     z-index: 3;
   }
   .footer_wrapper {
-    // border: solid blue 5px;
     grid-area: footer;
     height: 540px; 
     width: 100%;
@@ -277,7 +264,7 @@ $shadows-big:    multiple-yellow-shadow(30);
   }
 };
 
-// * SHOOTING STAR * //
+// * SHOOTING STARS * //
 
 $shooting-time: 20s;
 .night {

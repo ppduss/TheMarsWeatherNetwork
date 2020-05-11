@@ -5,7 +5,6 @@ import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 //  IMAGES  //
 import manfell2 from '../../assets/images43/manFell2.jpeg';
-import atmosphere from '../../assets/images43/atmosphere.jpeg';
 import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
 import aliens from '../../assets/images43/aliens.jpeg';
 import thicc from '../../assets/images43/thicc.jpeg';
@@ -15,11 +14,13 @@ import flat from '../../assets/images43/flat.jpeg';
 import sauvage from '../../assets/images43/sauvage.jpeg';
 import orbit from '../../assets/images43/orbit.gif';
 import android2 from '../../assets/images43/android2.jpeg';
+import sandy from '../../assets/images43/surfaceGrey.jpeg';
+
 
 const Topstories = () => (
   <div>
     <div className="top-stories_header">Top Stories</div>
-    <div className="carousel-container">
+    <div>
       <Carousel
         // autoPlay={7000}
         animationSpeed={1500}
@@ -62,15 +63,15 @@ const Topstories = () => (
           <a target="_blank" rel="noopener noreferrer" href="https://en.uncyclopedia.co/wiki/Ancient_Aliens">
             <img src={aliens} alt="life on Mars ?" />
           </a>
-          <div className="story_txt_title">What&apos;s beneath Mars&apos; icy surface ?</div>
-          <div className="story_txt">You’ll never guess this expert&apos;s shocking answer !</div>
+          <div className="story_txt_title">What will we find beneath Mars&apos; icy surface?</div>
+          <div className="story_txt">You’ll never guess this expert&apos;s shocking answer!</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
             <img src={manfell2} alt="Is the Starman in space ?" />
           </a>
-          <div className="story_txt_title">Is David Bowie really dead ?</div>
-          <div className="story_txt">Or did &quot; The Man Who Fell to Earth&quot; simply return home ?</div>
+          <div className="story_txt_title">Is David Bowie really dead?</div>
+          <div className="story_txt">Or did &quot;The Man Who Fell to Earth&quot; simply return home?</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.npr.org/2018/12/21/679155506/huge-martian-crater-korolev-appears-topped-with-miles-of-pristine-snow">
@@ -88,9 +89,9 @@ const Topstories = () => (
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Erg_(landform)">
-            <img src={atmosphere} alt="Sandy" />
+            <img src={sandy} alt="Sandy" />
           </a>
-          <div className="story_txt_title">How sandy is the Red Planet ?</div>
+          <div className="story_txt_title">How sandy is the Red Planet?</div>
           <div className="story_txt">NASA experts finally open up about the issue: &quot;It&apos;s pretty sandy&quot;.</div>
         </div>
         <div className="story">
@@ -108,6 +109,13 @@ const Topstories = () => (
           <div className="story_txt">Android rights experts claim the 20th century author&apos;s work &quot;robophobic&quot; and &quot;obsessed with sheep&quot;.</div>
         </div>
         <div className="story">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.criterion.com/films/28636-fantastic-planet">
+            <img src={sauvage} alt="sauvage" />
+          </a>
+          <div className="story_txt_title">Century-old animation uncovered from ruins</div>
+          <div className="story_txt">Strange movie titled &quot;La Planete Sauvage&quot; turn 100 years old. </div>
+        </div>
+        <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="http://www.the13thfloor.tv/2016/04/12/i-feel-fantastic-the-horrifying-history-of-tara-the-android/">
             <img src={android2} alt="android" />
           </a>
@@ -115,18 +123,11 @@ const Topstories = () => (
           <div className="story_txt">Debunking the top 10 myths about our mechanical bretheren.</div>
         </div>
         <div className="story">
-          <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
-            <img src={atmosphere} alt="Korolev" />
-          </a>
-          <div className="story_txt_title" />
-          <div className="story_txt">2020&apos;s hottest destination !</div>
-        </div>
-        <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.sciencealert.com/the-flat-earth-society-responded-elon-musk-twitter-beautiful-mars-conspiracy">
             <img src={flat} alt="flat" />
           </a>
-          <div className="story_txt_title">Flat Earth Society: &apos;Mars is round.&quot;</div>
-          <div className="story_txt">also Earth is a disk</div>
+          <div className="story_txt_title">Flat Earth Society: &quot;Mars is round.&quot;</div>
+          <div className="story_txt">Group unironically claims &quot;Mars has been observed to be round.&quot; </div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=LKYPYj2XX80">
