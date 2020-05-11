@@ -4,17 +4,17 @@ import './TopStories.scss';
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 //  IMAGES  //
-import manfell2 from '../../assets/images43/manFell2.jpeg';
-import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
-import aliens from '../../assets/images43/aliens.jpeg';
-import thicc from '../../assets/images43/thicc.jpeg';
-import suburb from '../../assets/images43/suburb.jpeg';
-import pkdbooks from '../../assets/images43/pkdBook.jpeg';
-import flat from '../../assets/images43/flat.jpeg';
-import sauvage from '../../assets/images43/sauvage.jpeg';
-import orbit from '../../assets/images43/orbit.gif';
-import android2 from '../../assets/images43/android2.jpeg';
-import sandy from '../../assets/images43/surfaceGrey.jpeg';
+import manfell2 from '../../assets/images/manFell2.jpeg';
+import korolevcrater from '../../assets/images/korolevcrater.jpeg';
+import aliens from '../../assets/images/aliens.jpeg';
+import thicc from '../../assets/images/thicc.jpeg';
+import suburb from '../../assets/images/suburb.jpeg';
+import pkdbooks from '../../assets/images/pkdBook.jpeg';
+import flat from '../../assets/images/flat.jpeg';
+import sauvage from '../../assets/images/sauvage.jpeg';
+import orbit from '../../assets/images/orbit.gif';
+import android2 from '../../assets/images/android2.jpeg';
+import sandy from '../../assets/images/surfaceGrey.jpeg';
 
 
 const Topstories = () => (

@@ -4,13 +4,13 @@ import '../TopStories/TopStories.scss';
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 // IMAGES
-import atmosphere from '../../assets/images43/atmosphere.jpeg';
-import marsYellow from '../../assets/images43/marsYellow.jpeg';
-import impact from '../../assets/images43/impactcrater.jpeg';
-import marstrue from '../../assets/images43/marstrue.jpeg';
-import rover from '../../assets/images43/rover.jpeg';
-import rover2 from '../../assets/images43/rover2.jpeg';
-import near from '../../assets/images43/near.jpeg';
+import atmosphere from '../../assets/images/atmosphere.jpeg';
+import marsYellow from '../../assets/images/marsYellow.jpeg';
+import impact from '../../assets/images/impactcrater.jpeg';
+import marstrue from '../../assets/images/marstrue.jpeg';
+import rover from '../../assets/images/rover.jpeg';
+import rover2 from '../../assets/images/rover2.jpeg';
+import near from '../../assets/images/near.jpeg';
 
 const Gallery = () => (
   <div>

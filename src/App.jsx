@@ -44,7 +44,6 @@ function App() {
         <div className="gallery_container">
           <Gallery />
         </div>
-
         <div className="footer_wrapper" />
       </div>
     </div>
