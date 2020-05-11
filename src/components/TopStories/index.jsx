@@ -4,7 +4,7 @@ import './TopStories.scss';
 import Carousel, { Dots } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 //  IMAGES  //
-import manfell from '../../assets/images43/manfell.jpeg';
+import manfell2 from '../../assets/images43/manFell2.jpeg';
 import atmosphere from '../../assets/images43/atmosphere.jpeg';
 import korolevcrater from '../../assets/images43/korolevcrater.jpeg';
 import aliens from '../../assets/images43/aliens.jpeg';
@@ -14,28 +14,14 @@ import pkdbooks from '../../assets/images43/pkdBook.jpeg';
 import flat from '../../assets/images43/flat.jpeg';
 import sauvage from '../../assets/images43/sauvage.jpeg';
 import orbit from '../../assets/images43/orbit.gif';
-
-
-// const [dimensions, setDimensions] = useState(window.innerWidth);
-// useEffect(() => {
-//   // articleHandler = () => {
-//   //   setDimensions(window.innerWidth)};
-//   window.addEventListener('resize', handleResize())
-//   });
-//   handleResize = () => {
-//   }
-//   return (
-//     console.log(dimensions)
-//   );
-// };
-//
+import android2 from '../../assets/images43/android2.jpeg';
 
 const Topstories = () => (
   <div>
     <div className="top-stories_header">Top Stories</div>
     <div className="carousel-container">
       <Carousel
-        autoPlay={5500}
+        // autoPlay={7000}
         animationSpeed={1500}
         dots
         infinite
@@ -81,16 +67,16 @@ const Topstories = () => (
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=YF_ESqYuhSQ">
-            <img src={manfell} alt="Is the Starman in space ?" />
+            <img src={manfell2} alt="Is the Starman in space ?" />
           </a>
           <div className="story_txt_title">Is David Bowie really dead ?</div>
-          <div className="story_txt">Or did the &quot;man who fell to earth&quot; simply return home ?</div>
+          <div className="story_txt">Or did &quot; The Man Who Fell to Earth&quot; simply return home ?</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://www.npr.org/2018/12/21/679155506/huge-martian-crater-korolev-appears-topped-with-miles-of-pristine-snow">
             <img src={korolevcrater} alt="Korolev" />
           </a>
-          <div className="story_txt_title">This year&apos;s best ski destination ?</div>
+          <div className="story_txt_title">This year&apos;s best ski destination.</div>
           <div className="story_txt">Why this is the year the Korolev crater is destined to shine.</div>
         </div>
         <div className="story">
@@ -111,19 +97,19 @@ const Topstories = () => (
           <a target="_blank" rel="noopener noreferrer" href="https://www.spacex.com/mars">
             <img src={thicc} alt="thicc" />
           </a>
-          <div className="story_txt_title">Space X Mars Mission Update</div>
+          <div className="story_txt_title">SpaceX Mars Mission Update</div>
           <div className="story_txt">Elon announces exciting new Titanium Hull Interplanetary & Cosmic Craft (THICC) rocket.</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="https://en.wikipedia.org/wiki/Philip_K._Dick">
             <img src={pkdbooks} alt="android rights" />
           </a>
-          <div className="story_txt_title">Android rights expert: &quot;Philip K. Dick was robophobic&quot;</div>
-          <div className="story_txt">&quot;And what&apos;s the deal with sheep ?&quot;</div>
+          <div className="story_txt_title">Philip K. Dick deemed &quot;innapropriate for school&quot;</div>
+          <div className="story_txt">Android rights experts claim the 20th century author&apos;s work &quot;robophobic&quot; and &quot;obsessed with sheep&quot;.</div>
         </div>
         <div className="story">
           <a target="_blank" rel="noopener noreferrer" href="http://www.the13thfloor.tv/2016/04/12/i-feel-fantastic-the-horrifying-history-of-tara-the-android/">
-            <img src={atmosphere} alt="android" />
+            <img src={android2} alt="android" />
           </a>
           <div className="story_txt_title">Android Awareness Month</div>
           <div className="story_txt">Debunking the top 10 myths about our mechanical bretheren.</div>
