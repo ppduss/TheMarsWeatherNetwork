@@ -2,6 +2,7 @@
   "name": "mars",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ppduss.github.io/TheMarsWeatherNetwork",
   "dependencies": {
     "@brainhubeu/react-carousel": "^1.12.17",
     "@testing-library/jest-dom": "^4.2.4",
@@ -23,7 +24,8 @@
     "typescript": "^3.9.3"
   },
   "scripts": {
-    "deploy": "gh-pages-deploy",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
