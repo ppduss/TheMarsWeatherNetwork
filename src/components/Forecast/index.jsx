@@ -12,7 +12,7 @@ const Forecast = () => {
         setWeatherData(response.data);
       })
       .catch((error) => {
-        console.log(error);
+        // console.log(error);
       });
   };
 
@@ -22,7 +22,7 @@ const Forecast = () => {
 
   const displaySelector = () => {
     const sevenEmptySolKeys = Array(7).fill(0);
-    console.log(weatherData);
+    // console.log(weatherData);
     const solKeysArray = (weatherData && weatherData.sol_keys) || sevenEmptySolKeys;
     const output = solKeysArray.map((sol) => {
       const day = ((weatherData && weatherData[sol]) || sol);

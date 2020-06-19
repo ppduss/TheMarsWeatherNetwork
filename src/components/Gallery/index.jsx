@@ -17,8 +17,8 @@ const Gallery = () => (
     <div className="top-stories_header">Gallery</div>
     <div>
       <Carousel
-        // autoPlay={8000}
-        // animationSpeed={1500}
+        // autoPlay={7000}
+        // animationSpeed={1000}
         dots
         infinite
         keepDirectionWhenDragging
@@ -51,13 +51,13 @@ const Gallery = () => (
         }}
         offset={0}
       >
+        <img src={rover} alt="rover" width={325} />
+        <img src={rover2} alt="rover2" width={325} />
+        <img src={near} alt="near" width={325} />
         <img src={marstrue} alt="true" width={325} />
         <img src={impact} alt="impact" width={325} />
         <img src={atmosphere} alt="atmosphere" width={325} />
         <img src={marsYellow} alt="marsYellow" width={325} />
-        <img src={rover} alt="rover" width={325} />
-        <img src={rover2} alt="rover2" width={325} />
-        <img src={near} alt="near" width={325} />
       </Carousel>
     </div>
   </div>
