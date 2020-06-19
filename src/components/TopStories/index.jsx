@@ -129,7 +129,7 @@ const Topstories = () => (
             <div className="story_txt">Group unironically claims &quot;Mars has been observed to be round.&quot; </div>
           </div>
         </a>
-        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/watch?v=LKYPYj2XX80">
+        <a target="_blank" rel="noopener noreferrer" href="https://youtu.be/FdE5vIG92B8">
           <div className="story">
             <img src={orbit} alt="orbit" />
             <div className="story_txt_title">Mars&apos; controversial orbit</div>

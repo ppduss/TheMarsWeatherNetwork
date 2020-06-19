@@ -89,7 +89,7 @@ const Forecast = () => {
 
 
   return (
-    <ForecastContent />
+    <ForecastContent/>
   );
 };
 
