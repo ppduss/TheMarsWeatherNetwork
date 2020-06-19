@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/TheMarsWeatherNetwork/precache-manifest.7d585c9ec7033e2964daa8ae5f2a1dc1.js"
+  "/TheMarsWeatherNetwork/precache-manifest.28fb6405ed3342a574a350f9a041b4cb.js"
 );
 
 self.addEventListener('message', (event) => {
