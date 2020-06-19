@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/TheMarsWeatherNetwork/static/css/main.960c0481.chunk.css",
+    "main.css": "/TheMarsWeatherNetwork/static/css/main.2daf274e.chunk.css",
     "main.js": "/TheMarsWeatherNetwork/static/js/main.9a8a33a5.chunk.js",
     "main.js.map": "/TheMarsWeatherNetwork/static/js/main.9a8a33a5.chunk.js.map",
     "runtime-main.js": "/TheMarsWeatherNetwork/static/js/runtime-main.e6ff0396.js",
@@ -9,10 +9,10 @@
     "static/js/2.95d3f7da.chunk.js": "/TheMarsWeatherNetwork/static/js/2.95d3f7da.chunk.js",
     "static/js/2.95d3f7da.chunk.js.map": "/TheMarsWeatherNetwork/static/js/2.95d3f7da.chunk.js.map",
     "index.html": "/TheMarsWeatherNetwork/index.html",
-    "precache-manifest.350e39877b68a3623cfc88ab5d25e112.js": "/TheMarsWeatherNetwork/precache-manifest.350e39877b68a3623cfc88ab5d25e112.js",
+    "precache-manifest.aa88a0b4a18512914486b2dae7334308.js": "/TheMarsWeatherNetwork/precache-manifest.aa88a0b4a18512914486b2dae7334308.js",
     "service-worker.js": "/TheMarsWeatherNetwork/service-worker.js",
     "static/css/2.9b46dffb.chunk.css.map": "/TheMarsWeatherNetwork/static/css/2.9b46dffb.chunk.css.map",
-    "static/css/main.960c0481.chunk.css.map": "/TheMarsWeatherNetwork/static/css/main.960c0481.chunk.css.map",
+    "static/css/main.2daf274e.chunk.css.map": "/TheMarsWeatherNetwork/static/css/main.2daf274e.chunk.css.map",
     "static/js/2.95d3f7da.chunk.js.LICENSE.txt": "/TheMarsWeatherNetwork/static/js/2.95d3f7da.chunk.js.LICENSE.txt",
     "static/media/aliens.jpeg": "/TheMarsWeatherNetwork/static/media/aliens.9a626e7f.jpeg",
     "static/media/android2.jpeg": "/TheMarsWeatherNetwork/static/media/android2.57576040.jpeg",
@@ -38,7 +38,7 @@
     "static/js/runtime-main.e6ff0396.js",
     "static/css/2.9b46dffb.chunk.css",
     "static/js/2.95d3f7da.chunk.js",
-    "static/css/main.960c0481.chunk.css",
+    "static/css/main.2daf274e.chunk.css",
     "static/js/main.9a8a33a5.chunk.js"
   ]
 }

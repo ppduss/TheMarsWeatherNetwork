@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fd37dd9ee24216dd973b21ef7e5710c4",
+    "revision": "97f6bc40f0e70d3ef8e373035d5a27fe",
     "url": "/TheMarsWeatherNetwork/index.html"
   },
   {
@@ -8,8 +8,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TheMarsWeatherNetwork/static/css/2.9b46dffb.chunk.css"
   },
   {
-    "revision": "209ee47632cca0bc4078",
-    "url": "/TheMarsWeatherNetwork/static/css/main.960c0481.chunk.css"
+    "revision": "6177aa2f0409f587e3a7",
+    "url": "/TheMarsWeatherNetwork/static/css/main.2daf274e.chunk.css"
   },
   {
     "revision": "5b9b5f061c177dade575",
@@ -20,7 +20,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/TheMarsWeatherNetwork/static/js/2.95d3f7da.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "209ee47632cca0bc4078",
+    "revision": "6177aa2f0409f587e3a7",
     "url": "/TheMarsWeatherNetwork/static/js/main.9a8a33a5.chunk.js"
   },
   {
