@@ -35,7 +35,7 @@ const APOD = () => {
   };
 
   return (
-    <a href="https://apod.nasa.gov/apod/astropix.html">
+    <a target="_blank" rel="noopener noreferrer" href="https://apod.nasa.gov/apod/astropix.html">
       <div className="APOD_main">
         <div className="APOD_title">Astronomy Picture of the Day</div>
         { mediaSelector() }
