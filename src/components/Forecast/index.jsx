@@ -41,19 +41,19 @@ const Forecast = () => {
             <div className="details">Sol {sol}</div>
             <div className="empty_space categories" />
             <div className="details">
-              <div>{displayNumbers(day?.AT?.av, ' °C')}</div>
-              <div>{displayNumbers(day && day.AT && day.AT.mx, ' °C')}</div>
-              <div>{displayNumbers(day && day.AT && day.AT.mn, ' °C')}</div>
+              <div>{displayNumbers(day?.AT?.av, ' °C')|| 'n/a'}</div>
+              <div>{displayNumbers(day?.AT?.mx, ' °C')|| 'n/a'}</div>
+              <div>{displayNumbers(day?.AT?.mn, ' °C')|| 'n/a'}</div>
             </div>
             <div className="empty_space categories" />
             <div className="details">
-              <div>{displayNumbers(day && day.HWS && day.HWS.av, ' m/s')}</div>
-              <div>{displayNumbers(day && day.HWS.mn, ' m/s')}</div>
-              <div>{displayNumbers(day && day.HWS.mx, ' m/s')}</div>
-              <div>{day && day.WD && day.WD.most_common && day.WD.most_common.compass_point || 'Loading'}</div>
+              <div>{displayNumbers(day?.HWS?.av, ' m/s')|| 'n/a'}</div>
+              <div>{displayNumbers(day?.HWS?.mn, ' m/s')|| 'n/a'}</div>
+              <div>{displayNumbers(day?.HWS?.mx, ' m/s') || 'n/a'}</div>
+              <div>{day?.WD?.most_common?.compass_point || 'n/a'}</div>
             </div>
             <div className="pressure categories">
-              <div>{displayNumbers(day && day.PRE && day.PRE.av, ' pa')}</div>
+              <div>{displayNumbers(day?.PRE?.av, ' pa')|| 'n/a'}</div>
             </div>
           </div>
         </>
