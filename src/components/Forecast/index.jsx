@@ -22,11 +22,11 @@ const Forecast = () => {
 
   const displaySelector = () => {
     const sevenEmptySolKeys = Array(7).fill(0);
-    // console.log(weatherData);
-    const solKeysArray = (weatherData && weatherData.sol_keys) || sevenEmptySolKeys;
+    console.log(weatherData);
+    const solKeysArray = (weatherData?.sol_keys?.length ? weatherData.sol_keys : sevenEmptySolKeys);
+    // const solKeysArray = (weatherData?.sol_keys?.length) || sevenEmptySolKeys;
     const output = solKeysArray.map((sol) => {
       const day = ((weatherData && weatherData[sol]) || sol);
-      
 
       const displayNumbers = (value, unit) => {
         if (value) {
@@ -86,7 +86,6 @@ const Forecast = () => {
       {displaySelector()}
     </div>
   );
-
 
   return (
     <ForecastContent/>

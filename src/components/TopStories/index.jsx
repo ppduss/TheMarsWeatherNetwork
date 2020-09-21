@@ -19,7 +19,7 @@ import sandy from '../../assets/images/surfaceGrey.jpeg';
 
 const Topstories = () => (
   <div>
-    <div className="top-stories_header">Top Stories</div>
+    <div className="top-stories_header">Trending clickbait</div>
     <div>
       <Carousel
         autoPlay={8000}
