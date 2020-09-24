@@ -22,7 +22,7 @@ const Forecast = () => {
 
   const displaySelector = () => {
     const sevenEmptySolKeys = Array(7).fill(0);
-    console.log(weatherData);
+    // console.log(weatherData);
     const solKeysArray = (weatherData?.sol_keys?.length ? weatherData.sol_keys : sevenEmptySolKeys);
     // const solKeysArray = (weatherData?.sol_keys?.length) || sevenEmptySolKeys;
     const output = solKeysArray.map((sol) => {

@@ -15,7 +15,7 @@ const APOD = () => {
         setPictureTitle(response.data.title);
         setDescription(response.data.explanation.slice(0, 170));
         setMediaType(response.data.media_type);
-        // console.log(response.data);
+        
       })
       .catch((error) => {
         // console.log(error);
@@ -29,9 +29,17 @@ const APOD = () => {
     if (mediaType === 'image') {
       return (
         <img title="APOD" className="photograph" src={pictureOfTheDay} alt="NASA APOD" />
+      )
+    }
+    else if (mediaType === undefined) {
+      return (
+        <img title="APOD" className="photograph" src="https://apod.nasa.gov/apod/image/1401/mooneyecon_melies_960.jpg" alt="NASA APOD" />
       );
-    } return (
-      <iframe title="APOD" className="photograph" src={pictureOfTheDay} alt="APOD video" />);
+    }
+    else {
+      return (
+        <iframe title="APOD" className="photograph" src={pictureOfTheDay} alt="APOD video" />);
+    }
   };
 
   return (
@@ -40,8 +48,8 @@ const APOD = () => {
         <div className="APOD_title">Astronomy Picture of the Day</div>
         { mediaSelector() }
         <div className="text_container">
-          <div className="bottom_text">{pictureTitle}</div>
-          <div className="description">{description}...(continued)</div>
+          <div className="bottom_text">{pictureTitle? pictureTitle : ''}</div>
+          <div className="description">{description? (description + "...continued") : "The API did not supply information about today's picture. Please click here for the official APOD post or check again tomorrow."}</div>
         </div>
       </div>
     </a> 
