@@ -13,7 +13,7 @@ const APOD = () => {
       .then((response) => {
         setPictureOfTheDay(response.data.url);
         setPictureTitle(response.data.title);
-        setDescription(response.data.explanation.slice(0, 170));
+        setDescription(response.data.explanation.slice(0, 160));
         setMediaType(response.data.media_type);
         
       })
@@ -49,7 +49,7 @@ const APOD = () => {
         { mediaSelector() }
         <div className="text_container">
           <div className="bottom_text">{pictureTitle? pictureTitle : ''}</div>
-          <div className="description">{description? (description + "...continued") : "The API did not supply information about today's picture. Please click here for the official APOD post or check again tomorrow."}</div>
+          <div className="description">{description? (description + " ...(more)") : "The API did not supply information about today's picture. Please click here for the official APOD post or check again tomorrow."}</div>
         </div>
       </div>
     </a> 
